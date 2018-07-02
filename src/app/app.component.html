@@ -1,0 +1,13 @@
+<div>
+  <cv-header></cv-header>
+  <ng-template ngIf="{{resume}}">
+    <div class="wrapper container">
+        <cv-skills></cv-skills>
+        <cv-education></cv-education>
+        <cv-projects [projects]="resume.projects"></cv-projects>
+        <cv-testimonials></cv-testimonials>
+        <cv-portfolio></cv-portfolio>
+        <cv-contact></cv-contact>
+    </div>
+  </ng-template>
+</div>

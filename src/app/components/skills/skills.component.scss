@@ -1,0 +1,35 @@
+@import "src/assets/css/theme-1";
+@import "src/assets/css/theme/base";
+
+section {
+    .subtitle {
+        font-size: 18px;
+        color: $text-grey;
+        margin-top:0;
+        margin-bottom: 45px;
+        font-weight:300;
+    }
+    .top-skills {
+        margin-bottom: 60px;
+        .item {
+            margin-bottom: 45px;
+        }
+    }
+    .level {
+        color: $text-grey;
+        margin-bottom: 15px;
+    }
+    .desc {
+        color: $text-color-secondary;
+    }
+    .skill-tag {
+        @include box-shadow(0 1px 4px 0 rgba(0,0,0,0.14));
+        padding: 6px 30px;
+        display: inline-block;
+        margin-right: 10px;
+        border: 1px solid $smoky-white;
+        font-weight: 500;
+        margin-bottom: 15px;
+        font-size: 16px;
+    }
+}

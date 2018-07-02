@@ -1,0 +1,116 @@
+@import "src/assets/css/theme-1";
+@import "src/assets/css/theme/base";
+
+header {
+    background: $theme-color;
+    color: #fff;
+    a {
+        text-decoration:none;
+        color: #fff;
+    }
+    
+    .top-bar {
+        position: relative;
+        padding-top: 15px;
+        padding-bottom: 120px;
+    }
+    
+    .social {
+        margin-bottom: 0;
+        a {
+            color: rgba(256, 256, 256, 0.8);   
+            display: inline-block;
+            text-align: center;
+            width: 32px;
+            height: 32px;
+            @include border-radius(50%);
+            padding-top: 2px;
+            font-size: 16px;
+            border: 2px solid rgba(256, 256, 256, 0.8);   
+            &:hover{
+                color: #fff;
+                border-color: #fff;
+            }
+        }
+    }
+    
+    .actions {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        .fa {
+            margin-right: 5px;
+        }
+        a {
+            margin-right: 10px;
+            color: #fff;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+    .profile-image {
+        position: absolute;
+        width: 160px;
+        height: 160px;
+        top: -80px;
+        margin-left: -80px;
+        left: 50%;
+    }
+    .name {
+        font-size: 48px;
+        margin-bottom: 15px;
+        letter-spacing: 0.5px;
+    }
+    .title {
+        font-size:28px;
+        font-weight: 300;
+        color: rgba(256, 256, 256, 0.8);
+        margin-bottom:30px;
+    }
+    
+    .intro {
+        background: darken($theme-color, 5%);
+        padding-top: 90px;
+        padding-bottom: 60px;
+        position: relative;
+        font-size: 16px;
+    }
+    
+    .profile {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    
+    .contact-info {
+        background: darken($theme-color, 10%);
+        padding-top: 30px;
+        padding-bottom: 30px;
+        font-size: 16px;
+        
+        ul {
+           margin-bottom: 0; 
+        }
+        
+        li {
+            margin-right: 30px;
+            color: rgba(256, 256, 256, 0.8);
+            svg {
+                margin-right: 5px;
+            }
+            a {
+               color: rgba(256, 256, 256, 0.8); 
+               &:hover {
+                   color: #fff;
+               }
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+            .fa {
+                margin-right:10px;
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,22 @@
+<div class="item">
+    <div class="work-place">
+        <h3 class="place">{{project.place}}</h3>
+        <div class="location">
+            <i class="fas fa-map-marker-alt mr-1"></i>{{project.location}}</div>
+    </div>
+    <div class="job-meta">
+        <div class="title">{{project.title}}</div>
+        <div class="time">{{project.from}} - {{project.to}}</div>
+    </div>
+    <!--//job-meta-->
+    <div class="job-desc">
+        <p>{{project.description}}</p>
+        <ul>
+            <li *ngFor="let activity of project.activities">{{activity}}</li>
+        </ul>
+        <span class="job-technology" *ngFor="let technology of project.technologies">{{technology}}</span>
+        <br/><br/>
+    </div>
+    <!--//job-desc-->
+</div>
+<!--//item-->

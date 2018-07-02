@@ -1,0 +1,324 @@
+{
+    "profile": {
+        "name": "Aleksander Lech"
+    },
+    "projects": [
+        {
+            "title": "Software Engineer",
+            "place": "Teletronics.ae",
+            "from": "08/2017",
+            "to": "Present",
+            "location": "Dubai",
+            "description": "Public sector related projects (confidential). Project involves processing of huge amount of data.",
+            "activities": [
+                "UI development involving Angular Material Design, Meteor and Node.js",
+                "Backend development in Node.js, Java 8, Spring",
+                "Analyzing production memory and performance problems",
+                "Support for Android team in developing native features"
+            ],
+            "technologies": [
+                "Java 8",
+                "Spring",
+                "Angular 1.4",
+                "Meteor",
+                "Node JS",
+                "MongoDB",
+                "Rabbit MQ",
+                "REST",
+                "Android 6.0",
+                "Git",
+                "Gradle",
+                "Maven",
+                "Team City",
+                "BitBucket",
+                "Docker",
+                "Elastic Search",
+                "Kibana"
+            ]
+        },
+        {
+            "title": "Senior Java Developer / Scrum Master",
+            "place": "Stibo Systems",
+            "from": "05/2016",
+            "to": "07/2017",
+            "location": "Aarhus / Gdańsk",
+            "description": "STEP is a huge Master Data Management solution developed by Stibo Systems and widely used across the world. As a part of R&D I develop so-called Automotive Vertical solution providing additional industry-specific features to the main product",
+            "activities": [
+                "Create a framework for fast reading of huge table-based files used for NAPA and AutoCare file formats",
+                "Implement NAPA formats data import into the STEP",
+                "Scrum Master role"
+            ],
+            "technologies": [
+                "OSGI",
+                "Java 8",
+                "Java Swing",
+                "Oracle",
+                "Jenkins",
+                "Gradle",
+                "SVN"
+            ]
+        },
+        {
+            "title": "Senior Java Developer",
+            "place": "Hamburg Sued/ Lufthansa",
+            "from": "10/2014",
+            "to": "04/2016",
+            "location": "Hamburg / Gdańsk",
+            "description": "Project GLOBE is a worldwide system for Hamburg Sued for contracts and shipment management. The system consists of many domain modules responsible for different business areas. I work in the Framework/Technology Base Team responsible for the system core features",
+            "activities": [
+                "Implementing core modules for the system",
+                "Supporting other teams in technology problems",
+                "Investigate production memory leaks and performance problems"
+            ],
+            "technologies": [
+                "Java EE 6",
+                "EJB 3.1",
+                "ICE Faces 3",
+                "JSF 2.1",
+                "Oracle",
+                "Git",
+                "Gerrit",
+                "Jenkins",
+                "Glassfish 3",
+                "dynaTrace",
+                "Eclipse Memory Analyzer"
+            ]
+        },
+        {
+            "title": "System Architect",
+            "place": "Atena",
+            "from": "10/2013",
+            "to": "10/2014",
+            "location": "Sopot",
+            "description": "Worked on a big company insurance platform called Atena Insurance Platform (AIP)",
+            "activities": [
+                "Design and develop core system components; R&D",
+                "Solving performance problems",
+                "Application servers and CI maintenance"
+            ],
+            "technologies": [
+                "Java EE 5",
+                "EJB 3.0",
+                "iBatis",
+                "JSF 2.0",
+                "RichFaces",
+                "JAXB",
+                "JAX-WS",
+                "JBoss 5",
+                "WildFly",
+                "WebSphere 7.0",
+                "Oracle",
+                "PL/SQL",
+                "Git",
+                "Jenkins",
+                "soap UI",
+                "Groovy",
+                "JXL"
+            ]
+        },
+        {
+            "title": "IT Architect / Development Manager",
+            "place": "SII / Nordea",
+            "from": "10/2012",
+            "to": "10/2013",
+            "location": "Gdynia",
+            "description": "Support delivery process for a big mortgage system (MEx) developed by an external vendor.",
+            "activities": [
+                "Version deployment technical coordination",
+                "Code review",
+                "Designing and implementing fixed price small projects for the bank using WebLogic and Oracle Service Bus middleware",
+                "Performed WebLogic administration training"
+            ],
+            "technologies": [
+                "WebLogic 12g", "ADF", "OSB", "Oracle", "JSP", "EJB 2.1/3.0", "JAX-WS", "soapUI", "PL/SQL Developer"
+            ]
+        },
+        {
+            "title": "Senior Java EE Developer",
+            "place": "SII / Atena",
+            "from": "07/2011",
+            "to": "09/2012",
+            "location": "Sopot",
+            "description": "Implement a big back office system PartenonWeb for major insurance companies. Mainly responsible for the Sales Network module",
+            "activities": [
+                "Full stack application development",
+                "Developing plugins in soapUI, Groovy and JXL to support testers",
+                "A technology research role. Researching new technologies to be adapted into entire system (including all modules) with project main architect"
+            ],
+            "technologies": [
+                "Java EE 5", "EJB 3.0", "Hibernate", "iBatis", "JSF 2.0", "RichFaces", "JAXB", "JAX-WS", "JBoss 5", "Oracle", "PL/SQL", "Git", "Jenkins", "soap UI", "Groovy", "JXL"
+            ]
+        },
+        {
+            "title": "IBM Business Modeler Developer",
+            "place": "IBM",
+            "from": "01/2011", 
+            "to": " 06/2011",
+            "location": "Warsaw",
+            "description": "A public-sector project for polish Police (e-Services).",
+            "activities": [
+                "Design and implement business processes",
+                "Building webservice interfeaces in IBM Rational Software Architect"
+            ],
+            "technologies": [
+                "IBM Webshpere Business Modeler", "IBM Websphere Integration Developer", "WSDL"
+            ]
+        },
+        {
+            "title": "Java/JS Developer",
+            "place": "IBM",
+            "from": "07/2010", 
+            "to": " 01/2011",
+            "location": "Warsaw",
+            "description": "Logistics and Vindication systems for ITI Neovision Poland. An International project held in client office.",
+            "activities": [
+                "Designing and implementing documents print engine (Java SE) and templates",
+                "Implementing frontend IBM Business Space widgets in DOJO (Java Script)"
+            ],
+            "technologies": [
+                "BIRT", "Java SE", "Java EE", "IBM Business Space", "DOJO", "Java Script", "JSON", "XML", "IBM WebSphere Integration Developer"
+            ]
+        },
+        {
+            "title": "Java EE Developer",
+            "place": "IBM",
+            "from": "01/2010", 
+            "to": " 07/2010",
+            "location": "Warsaw / Gdańsk",
+            "description": "Implementing and designing technical solution for a big system for Polish Ministry of Interior and Administration. The system was to manage and support polish electronic id`s.",
+            "activities": [
+                "Implementing web services (top-down) using Java EE technology and IBM WebSphere Application Server 7",
+                "Coordinating work of a small team in Gdansk, checking code quality"
+            ],
+            "technologies": [
+                "Java EE 5", "EJB 3", "JPA", "JPQL", "WSDL", "JAX-WS", "JAX-B", "XML", "IBM WAS 7.0", "DB2", "MQ", "Dozer", "soapUI"
+            ]
+        },
+        {
+            "title": "Java EE Developer",
+            "place": "Atena / Speednet",
+            "from": "11/2009", 
+            "to": " 03/2010",
+            "location": "Sopot",
+            "description": "BOSS – a new backoffice system for a big insurance company - Hestia - to manage their sales network",
+            "activities": [
+                "Designing and implementing commission table related system using MVEL technologies",
+                "Implementing project domain objects using JPA technology with JPQL queries"
+            ],
+            "technologies": [
+                "Java EE 5", "EJB 3.0", "JPA", "JPQL", "MVEL", "SAP NetWeaver", "WebDynpro", "MAXDB", "Oracle", "Enterprise Architect"
+            ]
+        },
+        {
+            "title": "Java EE Developer",
+            "place": "Speednet",
+            "from": "11/2009", 
+            "to": " 11/2009",
+            "location": "Sopot",
+            "description": "Create a web application for SPEED transportation company to manage their shipping and truck transport",
+            "activities": [
+                "Designing and implementing commission table related system using MVEL technologies",
+                "Implementing project domain objects using JPA technology with JPQL queries"
+            ],
+            "technologies": [
+                "Java EE 5", "EJB 3.0", "JPA", "JPQL", "Hibernate", "JBoss Seam", "Richfaces", "JSF 1.2", "JBoss 5.x"
+            ]
+        },
+        {
+            "title": "Java EE Developer",
+            "place": "Profit Software / Speednet",
+            "from": "07/2009", 
+            "to": "10/2009",
+            "location": "Gdynia",
+            "description": "Implement new Webservices and Business Logic for an existing system to support new AXA products",
+            "activities": [],
+            "technologies": [
+                "Java EE 5", "EJB 2.1", "JAXB", "JAX-WS", "Oracle WebLogic", "IBM WebSphere 6.0", "Oracle", "SoapUI", "XML"
+            ]
+        },
+        {
+            "title": "Java ME Developer",
+            "place": "Speednet",
+            "from": "03/2009", 
+            "to": "04/2009",
+            "location": "Gdynia",
+            "description": "Create a rich mobile application for Onet company to enable their services on java mobile platform",
+            "activities": [
+                "Implemented framework for resizable UI components Implemented Weather module",
+                "Implemented solution for video recording and sending content to server for further streaming"
+            ],
+            "technologies": [
+                "Java ME", "MIDP2.0/2.1", "Multimedia API", "J2ME Polish", "Tomcat", "Servlet", "ffmpeg", "JavaScript"
+            ]
+        },
+        {
+            "title": "Java SE/EE Developer/Architect",
+            "place": "Bell Labs / Speednet",
+            "from": "05/2008", 
+            "to": "02/2009",
+            "location": "Gdynia",
+            "description": "Geopepper system. The system lets their users to place so-called GMS message in specific geofence that is delivered to recipient mobile while he reaches the fence",
+            "activities": [
+                "Implemented MMS support with attachment upload",
+                "Designed and implemented separate system for commercial usage of geofencing technologies. Choosed newest available technologies like JBoss 5.0 and Java EE 5"
+            ],
+            "technologies": [
+                "Java SE 6.0", "Java EE 5.0", "JMS", "EJB 3.0", "JPA", "JPQL", "Hibernate", "Struts (1/2)", "RMI", "PostgreSQL", "JAX-WS", "REST", "JavaScript", "Prototype JS", "Ajax", "XHTML", "XML", "Tomcat", "JBoss 5.0"
+            ]
+        },
+        {
+            "title": "J2EE Developer",
+            "place": "Speednet",
+            "from": "03/2008", 
+            "to": "04/2008",
+            "location": "Gdynia",
+            "description": "Project “Finder”. Refactor and add some new features to the existing company system used for tracking their vehicles",
+            "activities": [],
+            "technologies": [
+                "J2EE", "EJB 2.1", "JSF", "Hibernate", "JavaScript"
+            ]
+        },
+        {
+            "title": "Symbian/C++/J2EE Developer",
+            "place": "Raiffeisen Bank / Speednet",
+            "from": "10/2007", 
+            "to": "02/2008",
+            "location": "Gdynia",
+            "description": "Develop a mobile application for bank (Raiffeisen) customers to manage their accounts",
+            "activities": [
+                "Implemented controls for an automatic IBAN formatting and saving/loading them from phone contacts using dedicated Symbian API"
+            ],
+            "technologies": [
+                "C++", "Carbide C++"," Symbian S60 3rd Edition FP2", "NOKIA RDA", "J2EE", "JBoss 4.x"
+            ]
+        },
+        {
+            "title": "Junior J2EE Developer",
+            "place": "Speednet",
+            "from": "07/2007", 
+            "to": "09/2007",
+            "location": "Gdynia",
+            "description": "Various company internal minor R&D projects",
+            "activities": [
+                "Investigated possibilities of migration to the new EJB3.0 specification for internal company projects"
+            ],
+            "technologies": [
+                "J2EE/JEE (EJB2.1,3.0)", "Struts(1/2)", "JSF", "Servlets", "Hibernate", "XML", "XSL", "JBoss 4.x"
+            ]
+        },
+        {
+            "title": "PHP Developer",
+            "place": "SmartBit",
+            "from": "01/2007", 
+            "to": "07/2007",
+            "location": "Gdynia",
+            "description": "Created and deployed multiple CMS systems for various companies basing on Joomla solutions. For instance, Speednet and NOWAK",
+            "activities": [
+                "Investigated possibilities of migration to the new EJB3.0 specification for internal company projects"
+            ],
+            "technologies": [
+                "PHP5", "MySQL", "XHTML", "JavaScript"
+            ]
+        }
+    ]
+}
