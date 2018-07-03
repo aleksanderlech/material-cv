@@ -1,7 +1,7 @@
 
 export class Project {
     title : String;
-    company : String;
+    place : String;
     from : String;
     to : String;
     location : String;
