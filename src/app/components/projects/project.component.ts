@@ -3,8 +3,7 @@ import { Project } from "../../services/resume.model";
 
 @Component({
   selector: 'cv-project',
-  templateUrl: './project.component.html',
-  styleUrls: ['./project.component.css']
+  templateUrl: './project.component.html'
 })
 export class ProjectComponent {
 

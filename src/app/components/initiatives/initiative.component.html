@@ -1,0 +1,15 @@
+<div class="item">
+    <div class="job-desc">
+        <h3>{{initiative.name}}</h3>
+        <p>{{initiative.description}}</p>
+        <ul>
+            <li *ngFor="let activity of initiative.activities">{{activity}}</li>
+        </ul>
+        <span class="job-technology" *ngFor="let technology of initiative.technologies">{{technology}}</span>
+        <br/>
+        <br/>
+    </div>
+    <div class="screenshots">
+        <img *ngFor="let media of initiative.media" class="screenshot" [attr.src]="'assets/content/images/initiatives/'+media"/>
+    </div>
+</div>

@@ -11,7 +11,7 @@ export class DataService {
   constructor(private http: HttpClient) { }
 
   public getData(): Observable<Resume> {
-    return this.http.get<Resume>("./assets/data/cv.json");
+    return this.http.get<Resume>("./assets/content/cv.json");
   }
 
 }
