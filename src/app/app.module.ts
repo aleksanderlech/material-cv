@@ -8,6 +8,7 @@ import { SkillsComponent } from './components/skills/skills.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { TestimonialsComponent } from './components/testimonials/testimonials.component';
 import { ProjectsModule } from './components/projects/projects.component';
+import { InitiativesModule } from './components/initiatives/initiatives.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { ServicesModule } from './services/services.module';
 
@@ -25,7 +26,8 @@ import { ServicesModule } from './services/services.module';
     CommonModule,
     ServicesModule,
     BrowserModule,
-    ProjectsModule
+    ProjectsModule,
+    InitiativesModule
   ],
   providers: [],
   bootstrap: [AppComponent]

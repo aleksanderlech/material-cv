@@ -154,6 +154,17 @@ p {
     text-align: center;
 }
 
+.job-technology {
+    font-size: 12px;
+    font-weight: 500;
+    color: #607D8B;
+    display: inline-block;
+    margin: 1px;
+    background-color: #ECEFF1;
+    border-radius: 4px;
+    padding: 2px 5px;
+}
+
 .timeline {
     border-left: 3px solid $theme-color;
     border-bottom-right-radius: 2px;
@@ -271,5 +282,15 @@ p {
     }
 }
 
+.screenshots {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 
+    img.screenshot {
+        margin: 5px 5px;
+        max-width: 400px;
+        max-height: 300px;
+    }
+}
 

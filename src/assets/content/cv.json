@@ -320,5 +320,61 @@
                 "PHP5", "MySQL", "XHTML", "JavaScript"
             ]
         }
+    ],
+    "initiatives": [
+        {
+            "name": "UBEO - “order without the queue!”",
+            "from": "03/2016", 
+            "to": "07/2017",
+            "location": "Gdańsk",
+            "description": "Developed with other 3 teammates solution consists of 2 Android applications, Angular UI and REST services deployed in microservices concept and using NoSQL database. It also integrated Android Pay as well as other payments providers available in Poland. The project goal is to provide a modern solution for fast and comfortable products ordering in pubs/restaurants and what`s more, have fun while learning the newest trends/ technologies available :)",
+            "activities": [
+                "Designed system architecture with microservices principles",
+                "Implemented payment system that on mobile and backend side that integrates external providers and Android Pay",
+                "Developed microservices, invoice, report system and supported mobile application development",
+                "Prepared gradle and CI configuration for the project"
+            ],
+            "technologies": [
+                "Java 8", "Java EE", "WildFly", "Android 6", "Android Pay", "Google Play", "XHTML", "Angular", "JavaScript", "Gradle", "Docker", "Git", "Jenkins"
+            ],
+            "media": [
+                "ubeo1.png"
+            ]
+        },
+        {
+            "name": "Drive Assistant",
+            "from": "08/2013", 
+            "to": "08/2014",
+            "location": "Gdynia",
+            "description": "The application main feature is video, location and acceleration logging while driving a car. The recorded trips can be further played and searched for example by destination street name. Published to Google Play.",
+            "activities": [
+                "Implemented custom MediaPlayer to suppport multiple videopart files synced with previously stored sensor data"
+            ],
+            "technologies": [
+                "Java", "Android", "SQLite", "Android Studio", "Google Play", "Roboguice", "BugSense", "ACRA", "Gradle", "Git", "Jenkins"
+            ],
+            "media": [
+                "da1.png",
+                "da2.png",
+                "da4.png",
+                "da5.png"
+            ]
+        },
+        {
+            "name": "Around",
+            "from": "11/2010", 
+            "to": "11/2012",
+            "location": "Gdynia",
+            "description": "Co-owner of the awarded company focused on researching computer vision solutions. Participant of CEBIT.",
+            "activities": [
+                "Implementing desktop applications for augumented reality using OpenCV, C++ and Qt",
+                "Implementing Android AR apps",
+                "Representing company at Cebit",
+                "Talking with customers"
+            ],
+            "technologies": [
+                "C++", "Qt", "OpenCV", "Android", "ffmpeg"
+            ]
+        }
     ]
 }

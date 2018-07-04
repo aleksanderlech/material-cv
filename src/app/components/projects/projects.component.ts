@@ -1,4 +1,4 @@
-import { Component, Output, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { ProjectComponent } from './project.component';
 import { NgModule } from '@angular/core';
 import { Project } from "../../services/resume.model";

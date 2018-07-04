@@ -1,0 +1,17 @@
+<section id="initiatives-section" class="initiatives-section section">
+    <h2 class="section-title">Own projects &amp; initiatives</h2>
+    <div id="initiatives-carousel" class="initiatives-carousel carousel slide" data-interval="8000">
+        
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#initiatives-carousel" [attr.data-slide-to]="index" *ngFor="let initiative of initiatives ; let index = index" [class.active]="index == 0"></li>
+        </ol>
+        
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+                <div class="item carousel-item" *ngFor="let initiative of initiatives ; let index = index" [class.active]="index == 0">
+                    <cv-initiative [initiative]="initiative"></cv-initiative>
+                </div>
+        </div><!--//carousel-inner-->
+    </div><!--//initiatives-carousel-->
+</section><!--//section-->
