@@ -1,28 +1,23 @@
 <header class="header">
     <div class="top-bar container-fluid">
         <div class="actions">
-            <a class="btn d-none d-md-inline-block" href="mailto:aleks.lech@gmail.com"><i class="fas fa-paper-plane" aria-hidden="true"></i> Hire Me</a>
-            <a class="btn" href="https://drive.google.com/open?id=1fPMAx6Hr4rbfEmiAIMDJLWl5vJNkUYUi" target="_blank"><i class="fas fa-download" aria-hidden="true"></i> Download My Resume</a>
+            <a class="btn d-none d-md-inline-block" [href]="'mailto:'+profile.contact.mail"><i class="fas fa-paper-plane" aria-hidden="true"></i> Hire Me</a>
+            <a class="btn" [href]="profile.contact.cv" target="_blank"><i class="fas fa-download" aria-hidden="true"></i> Download My Resume</a>
         </div><!--//actions-->
         <ul class="social list-inline">
-            <li class="list-inline-item"><a target="_blank" href="http://linkedin.com/in/aleksanderlech"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
-            <li class="list-inline-item"><a target="_blank" href="http://github.com/aleksanderlech"><i class="fab fa-github-alt" aria-hidden="true"></i></a></li>
-            <li class="list-inline-item"><a target="_blank" href="skype://aleks_gd"><i class="fab fa-skype" aria-hidden="true"></i></a></li>
+            <li class="list-inline-item"><a target="_blank" [href]="profile.contact.linkedin"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+            <li class="list-inline-item"><a target="_blank" [href]="profile.contact.github"><i class="fab fa-github-alt" aria-hidden="true"></i></a></li>
+            <li class="list-inline-item"><a target="_blank" [href]="'skype://'+profile.contact.skype"><i class="fab fa-skype" aria-hidden="true"></i></a></li>
         </ul><!--//social-->
     </div><!--//top-bar-->
     
     <div class="intro">
         <div class="container text-center">
             <img class="profile-image" src="assets/content/images/profile-image.png" alt="">
-            <h1 class="name">Aleksander Lech</h1>
-            <div class="title">Software Developer &amp; Architect</div>
+            <h1 class="name">{{profile.name}}</h1>
+            <div class="title">{{profile.title}}</div>
             <div class="profile">
-                <p>
-                    I have graduated from the Gdansk University of Technology Faculty of Technical Physics and Applied Mathematics with Masters of Science, Engineer degree. 
-                    I have started my professional career long time before the graduation. I used to work as a Java EE Developer as a contractor. During my 10 years’ experience I have been given an opportunity to participate in many interesting projects for various sectors. 
-                    I like digging into technology related topics, solving difficult problems as well as supporting other team mates. That’s why I always used to prefer architect roles that gave me possibility to test new technologies as well as develop API’s and frameworks. 
-                    I am a passionate of functional programming and Android development after work. How can I help you?
-                </p>
+                <p>{{profile.summary}}</p>
             </div><!--//profile-->
         </div><!--//container-->
     </div><!--//intro-->
@@ -30,9 +25,9 @@
     <div class="contact-info">
         <div class="container text-center">
             <ul class="list-inline">
-                <li class="email list-inline-item"><i class="fas fa-envelope"></i><a href="mailto:aleks.lech@gmail.com">aleks.lech@gmail.com</a></li>
-                <li class="list-inline-item"><i class="fas fa-phone"></i> <a href="tel: +971582829516">+971 58 28 29 516</a></li>
-                <li class="website list-inline-item"><i class="fas fa-globe"></i><a href="#" target="_blank">aleksander-lech.com</a></li>
+                <li class="email list-inline-item"><i class="fas fa-envelope"></i><a [href]="'mailto:'+profile.contact.mail">{{profile.contact.mail}}</a></li>
+                <li class="list-inline-item"><i class="fas fa-phone"></i> <a [href]="'tel:'+profile.contact.phone">{{profile.contact.phone}}</a></li>
+                <li class="website list-inline-item"><i class="fas fa-globe"></i><a href="#" target="_blank">{{profile.contact.website}}</a></li>
             </ul>
         </div><!--//container-->
     </div><!--//contact-info-->

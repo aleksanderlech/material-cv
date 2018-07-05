@@ -1,5 +1,5 @@
 <div>
-  <cv-header></cv-header>
+  <cv-header [profile]="resume.profile"></cv-header>
   <ng-template ngIf="{{resume}}">
     <div class="wrapper container">
         <cv-skills></cv-skills>
@@ -8,7 +8,7 @@
         <cv-initiatives [initiatives]="resume.initiatives"></cv-initiatives>
         <cv-testimonials></cv-testimonials>
         <cv-portfolio></cv-portfolio>
-        <cv-contact [contact]="resume.contact"></cv-contact>
+        <cv-contact [contact]="resume.profile.contact"></cv-contact>
     </div>
   </ng-template>
 </div>
