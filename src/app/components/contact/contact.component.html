@@ -13,14 +13,13 @@
                     <li><i class="fas fa-check" aria-hidden="true"></i>Mobile development for Angular</li>
                     <li><i class="fas fa-check" aria-hidden="true"></i>Performance diagnostics</li>
                 </ul>
-                <p>Drop me a line at <a href="mailto:aleks.lech@gmail.com">aleks.lech@gmail.com</a> or call me at <a href="tel:0971582829516">+971 58 28 29 516</a></p>
+                <p>Drop me a line at <a [href]="'mailto:'+contact.mail">{{contact.mail}}</a> or call me at <a [href]="'tel:'+contact.phone">{{contact.phone}}</a></p>
                 <ul class="social list-inline">
-                    <li class="list-inline-item"><a href="http://linkedin.com/in/aleksanderlech"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
-                    <li class="list-inline-item"><a href="https://twitter.com/AleksanderLech"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
-                    <li class="list-inline-item"><a href="http://github.com/aleksanderlech"><i class="fab fa-github-alt" aria-hidden="true"></i></a></li>
-                    <li class="list-inline-item"><a href="skype://aleks_gd"><i class="fab fa-skype" aria-hidden="true"></i></a></li>
+                    <li class="list-inline-item"><a [href]="contact.linkedin"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+                    <li class="list-inline-item"><a [href]="contact.twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                    <li class="list-inline-item"><a [href]="contact.github"><i class="fab fa-github-alt" aria-hidden="true"></i></a></li>
+                    <li class="list-inline-item"><a [href]="contact.skype"><i class="fab fa-skype" aria-hidden="true"></i></a></li>
                 </ul><!--//social-->
             </div><!--//diaplog-->
         </div><!--//intro-->
-
     </section><!--//section-->

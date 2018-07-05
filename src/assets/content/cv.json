@@ -1,6 +1,12 @@
 {
-    "profile": {
-        "name": "Aleksander Lech"
+    "contact": {
+        "name": "Aleksander Lech",
+        "phone": "+971 58 28 29 516",
+        "mail": "aleks.lech@gmail.com",
+        "github": "http://github.com/aleksanderlech",
+        "linkedin": "http://linkedin.com/in/aleksanderlech",
+        "twitter": "https://twitter.com/AleksanderLech",
+        "skype": "skype://aleks_gd"
     },
     "projects": [
         {

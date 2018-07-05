@@ -18,7 +18,19 @@ export interface Project extends Experience {
     location : String;
 }
 
+export interface Contact {
+    name: String;
+    phone: String;
+    mail: String;
+    linkedin: String;
+    github: String;
+    twitter: String;
+    skype: String;
+    cv: String;
+}
+
 export interface Resume {
+    contact : Contact;
     projects : Project[];
     initiatives : Initiative[];
 }
