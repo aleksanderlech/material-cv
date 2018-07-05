@@ -9,9 +9,9 @@
         
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
-                <div class="item carousel-item" *ngFor="let initiative of initiatives ; let index = index" [class.active]="index == 0">
-                    <cv-initiative [initiative]="initiative"></cv-initiative>
-                </div>
+            <div class="item carousel-item" *ngFor="let initiative of initiatives ; let index = index" [class.active]="index == 0">
+                <cv-initiative [initiative]="initiative"></cv-initiative>
+            </div>
         </div><!--//carousel-inner-->
     </div><!--//initiatives-carousel-->
 </section><!--//section-->

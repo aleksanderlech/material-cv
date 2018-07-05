@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Testimonial } from '../../services/resume.model';
 
 @Component({
   selector: 'cv-testimonials',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./testimonials.component.scss']
 })
 export class TestimonialsComponent {
-
+  
+  @Input() testimonials: Testimonial[];
 }
