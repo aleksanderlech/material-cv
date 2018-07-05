@@ -18,6 +18,12 @@ export interface Project extends Experience {
     location : String;
 }
 
+export interface Testimonial {
+    quote: String;
+    name: String;
+    position: String;
+}
+
 export interface Profile {
     name: String;
     title: String;
@@ -40,4 +46,5 @@ export interface Resume {
     profile : Profile;
     projects : Project[];
     initiatives : Initiative[];
+    testimonials : Testimonial[];
 }

@@ -388,5 +388,22 @@
                 "C++", "Qt", "OpenCV", "Android", "ffmpeg"
             ]
         }
+    ],
+    "testimonials": [
+        {
+            "name": "Benjamin Toft Jakobsen",
+            "position": "Software architect, Stibo Systems",
+            "quote": "Aleksander Lech has been working for Stibo Systems since spring 2016 as a senior software developer and scrum master. Aleksander has managed to put a lot of structure on our project and he have done a great work with our integration to complex automotive formats, such as TecDoc, NAPA and AutoCare. He is a highly skilled developer, that always deliver high quality code, and improves all code he comes near. It has been a pleasure working with Aleksander, and I hereby give him my best recommendations."
+        },
+        {
+            "name": "Jacek Wielich",
+            "position": "Business Analyst, Nordea Bank",
+            "quote": "Aleksander has excellent programming skills. His wide knowledge and big experience helped many times in solving difficult project issues. I can truly recommend Alex as a very proactive IT expert who can deal with any 'nightmare' level tasks."
+        },
+        {
+            "name": "Maciej Gottfried",
+            "position": "Software Developer, Atena",
+            "quote": "Skilled developer with very good OO thinking and Java knowledge. Terrific ideas especially in low level generic system layers. Valuable teammate, good social skills."
+        }              
     ]
 }
