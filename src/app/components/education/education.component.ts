@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Input, Component } from '@angular/core';
+import { Education } from '../../services/resume.model';
 
 @Component({
   selector: 'cv-education',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./education.component.scss']
 })
 export class EducationComponent {
-
+  @Input() education: Education[];
 }

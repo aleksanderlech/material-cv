@@ -3,7 +3,7 @@
   <ng-template ngIf="{{resume}}">
     <div class="wrapper container">
         <cv-skills></cv-skills>
-        <cv-education></cv-education>
+        <cv-education [education]="resume.education"></cv-education>
         <cv-projects [projects]="resume.projects"></cv-projects>
         <cv-initiatives [initiatives]="resume.initiatives"></cv-initiatives>
         <cv-testimonials [testimonials]="resume.testimonials"></cv-testimonials>
