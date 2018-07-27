@@ -54,11 +54,17 @@ export interface Offer {
     solutions: String[];
 }
 
+export interface Company {
+    name: String;
+    sector: String;
+}
+
 export interface Resume {
     profile : Profile;
     education: Education[];
     projects : Project[];
     initiatives : Initiative[];
     testimonials : Testimonial[];
+    companies: Company[];
     offer: Offer;
 }

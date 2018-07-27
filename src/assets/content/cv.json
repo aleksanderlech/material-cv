@@ -425,6 +425,56 @@
             "quote": "Skilled developer with very good OO thinking and Java knowledge. Terrific ideas especially in low level generic system layers. Valuable teammate, good social skills."
         }              
     ],
+    "companies" : [
+        { 
+            "name": "ibm",
+            "sector": "Outsorcing"
+        },
+        { 
+            "name": "stibo",
+            "sector": "Automotive"
+        },
+        { 
+            "name": "dubai_goverment",
+            "sector": "Public"
+        },
+        { 
+            "name": "mswia",
+            "sector": "Public"
+        },
+        { 
+            "name": "hamburg_sued",
+            "sector": "Transportation"
+        },
+        { 
+            "name": "atena",
+            "sector": "Insurance"
+        },
+        { 
+            "name": "sii",
+            "sector": "Outsorcing"
+        },
+        { 
+            "name": "speednet",
+            "sector": "Outsorcing"
+        },
+        { 
+            "name": "lhsystems",
+            "sector": "Transportation"
+        },
+        { 
+            "name": "astek",
+            "sector": "Outsorcing"
+        },
+        { 
+            "name": "nordea",
+            "sector": "Banking"
+        },
+        { 
+            "name": "axa",
+            "sector": "Insurance"
+        }
+    ],
     "offer" : {
         "summary" : "I am currently actively seeking for new opportunities. I am open for pernament positions in Dubai or remote. Having an interesting idea or opportunity?",
         "solutions": [
