@@ -1,5 +1,6 @@
 declare var $: any;
-import { Component, OnInit } from '@angular/core';
+import { Input, Output, Component, OnInit } from '@angular/core';
+import { Company } from '../../services/resume.model';
 
 @Component({
   selector: 'cv-portfolio',
@@ -7,6 +8,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./portfolio.component.scss']
 })
 export class PortfolioComponent implements OnInit {
+
+  @Input() companies: Company[];
+
+  @Output() getSectors(): Set<String> {
+    return new Set(this.companies.map(company => company.sector));
+  }
 
   ngOnInit() {
     /* ======= Isotope plugin ======= */
