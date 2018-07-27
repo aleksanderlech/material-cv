@@ -42,8 +42,16 @@ export interface Contact {
     cv: String;
 }
 
+export interface Education {
+    name: String;
+    period: String;
+    institution: String;
+    description : String;
+}
+
 export interface Resume {
     profile : Profile;
+    education: Education[];
     projects : Project[];
     initiatives : Initiative[];
     testimonials : Testimonial[];

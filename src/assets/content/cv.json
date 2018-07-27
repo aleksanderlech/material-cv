@@ -14,6 +14,25 @@
             "cv": "https://drive.google.com/open?id=1fPMAx6Hr4rbfEmiAIMDJLWl5vJNkUYUi"
         }
     },
+    "education": [
+        {
+            "name" : "Master of Science",
+            "period": "2004 - 2009",
+            "institution": "Gdansk University of Technology",
+            "description" : "Applied Computer Science, thesis title: \"Java EE technology application to build a modern enterprise applications on the example of a system for invoicing\""
+        },
+        {
+            "name" : "OCA-JP-7 Java SE 7 Programmer I",
+            "period": "2014",
+            "institution": "Oracle",
+            "description" : "Completed with score of 86%"
+        },
+        {
+            "name" : "Scrum Master",
+            "period": "2017",
+            "description" : "Successfully completed 2 days Scrum Master training held in Dubai."
+        }
+    ],
     "projects": [
         {
             "title": "Software Engineer",
