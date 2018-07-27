@@ -1,6 +1,6 @@
 <div>
-  <cv-header [profile]="resume.profile"></cv-header>
   <ng-template ngIf="{{resume}}">
+    <cv-header [profile]="resume.profile"></cv-header>
     <div class="wrapper container">
         <cv-skills></cv-skills>
         <cv-education [education]="resume.education"></cv-education>
@@ -8,7 +8,7 @@
         <cv-initiatives [initiatives]="resume.initiatives"></cv-initiatives>
         <cv-testimonials [testimonials]="resume.testimonials"></cv-testimonials>
         <cv-portfolio></cv-portfolio>
-        <cv-contact [contact]="resume.profile.contact"></cv-contact>
+        <cv-contact [offer]="resume.offer" [contact]="resume.profile.contact"></cv-contact>
     </div>
   </ng-template>
 </div>

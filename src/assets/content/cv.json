@@ -424,5 +424,15 @@
             "position": "Software Developer, Atena",
             "quote": "Skilled developer with very good OO thinking and Java knowledge. Terrific ideas especially in low level generic system layers. Valuable teammate, good social skills."
         }              
-    ]
+    ],
+    "offer" : {
+        "summary" : "I am currently actively seeking for new opportunities. I am open for pernament positions in Dubai or remote. Having an interesting idea or opportunity?",
+        "solutions": [
+            "Application architecture",
+            "Front-end development with AngularJS",
+            "Back-end development with Java/Node",
+            "Mobile development for Angular",
+            "Performance diagnostics"
+        ]
+    }
 }

@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Contact } from "../../services/resume.model";
+import { Offer, Contact } from "../../services/resume.model";
 
 @Component({
   selector: 'cv-contact',
@@ -7,6 +7,7 @@ import { Contact } from "../../services/resume.model";
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent {
-  
+
+  @Input() offer: Offer;
   @Input() contact: Contact;
 }
