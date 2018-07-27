@@ -3,7 +3,7 @@
 This is my personal CV project in Angular (currently draft) but feel free to use it for your needs.
 
 
-To see a running example visit [aleksander-lech.com](https://aleksander-lech.com).
+To see a running example visit [aleksander-lech.com](http://aleksander-lech.com).
 
 ## Configuration
 
