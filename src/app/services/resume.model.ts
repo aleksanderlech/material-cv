@@ -49,10 +49,16 @@ export interface Education {
     description : String;
 }
 
+export interface Offer {
+    summary: String;
+    solutions: String[];
+}
+
 export interface Resume {
     profile : Profile;
     education: Education[];
     projects : Project[];
     initiatives : Initiative[];
     testimonials : Testimonial[];
+    offer: Offer;
 }

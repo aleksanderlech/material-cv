@@ -7,6 +7,6 @@ import { Profile } from "../../services/resume.model";
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
-  
+ 
   @Input() profile: Profile;
 }

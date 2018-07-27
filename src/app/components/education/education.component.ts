@@ -7,5 +7,6 @@ import { Education } from '../../services/resume.model';
   styleUrls: ['./education.component.scss']
 })
 export class EducationComponent {
+  
   @Input() education: Education[];
 }

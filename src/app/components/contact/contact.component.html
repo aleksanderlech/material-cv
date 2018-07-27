@@ -3,15 +3,10 @@
         <div class="intro">
             <img class="profile-image" src="assets/content/images/profile-image.png" alt="">
             <div class="dialog">
-                <p>I am currently actively seeking for new opportunities. I am open for pernament positions in Dubai or remote. Having an interesting idea or opportunity?
-                </p>
+                <p>{{offer.summary}}</p>
                 <p><strong>I can help with the following:</strong></p>
                 <ul class="list-unstyled service-list">
-                    <li><i class="fas fa-check" aria-hidden="true"></i>Application architecture</li>
-                    <li><i class="fas fa-check" aria-hidden="true"></i>Front-end development with AngularJS</li>
-                    <li><i class="fas fa-check" aria-hidden="true"></i>Back-end development with Java/Node</li>
-                    <li><i class="fas fa-check" aria-hidden="true"></i>Mobile development for Angular</li>
-                    <li><i class="fas fa-check" aria-hidden="true"></i>Performance diagnostics</li>
+                    <li *ngFor="let solution of offer.solutions"><i class="fas fa-check" aria-hidden="true"></i>{{solution}}</li>
                 </ul>
                 <p>Drop me a line at <a [href]="'mailto:'+contact.mail">{{contact.mail}}</a> or call me at <a [href]="'tel:'+contact.phone">{{contact.phone}}</a></p>
                 <ul class="social list-inline">
