@@ -42,14 +42,16 @@
             "location": "Dubai",
             "description": "Public sector related projects (confidential). Project involves processing of huge amount of data.",
             "activities": [
+                "Developing high throughput microservices and queue processing systems",
                 "UI development involving Angular Material Design, Meteor and Node.js",
                 "Backend development in Node.js, Java 8, Spring",
                 "Analyzing production memory and performance problems",
                 "Support for Android team in developing native features"
             ],
             "technologies": [
-                "Java 8",
+                "Java 11",
                 "Spring",
+                "Vert.x",
                 "Angular 1.4",
                 "Meteor",
                 "Node JS",
@@ -63,6 +65,7 @@
                 "Team City",
                 "BitBucket",
                 "Docker",
+                "Graphana",
                 "Elastic Search",
                 "Kibana"
             ]
