@@ -5,13 +5,13 @@
         "summary": "I have graduated from the Gdansk University of Technology Faculty of Technical Physics and Applied Mathematics with Masters of Science, Engineer degree. I have started my professional career long time before the graduation. I used to work as a Java EE Developer as a contractor. During my 10 years’ experience I have been given an opportunity to participate in many interesting projects for various sectors.  I like digging into technology related topics, solving difficult problems as well as supporting other team mates. That’s why I always used to prefer architect roles that gave me possibility to test new technologies as well as develop API’s and frameworks. I am a passionate of functional programming and Android development after work. How can I help you?",
         "contact": {
             "phone": "+971 58 28 29 516",
-            "mail": "aleks.lech@gmail.com",
+            "mail": "me@aleksander-lech.com",
             "github": "http://github.com/aleksanderlech",
             "linkedin": "http://linkedin.com/in/aleksanderlech",
             "twitter": "https://twitter.com/AleksanderLech",
             "skype": "skype://aleks_gd",
             "website": "aleksander-lech.com",
-            "cv": "https://drive.google.com/open?id=1fPMAx6Hr4rbfEmiAIMDJLWl5vJNkUYUi"
+            "cv": "https://drive.google.com/file/d/1t2oH0EVVHIEFDoB02zGKrOhBM6O9Jv9c/view?usp=sharing"
         }
     },
     "education": [
@@ -40,17 +40,18 @@
             "from": "08/2017",
             "to": "Present",
             "location": "Dubai",
-            "description": "Public sector related projects (confidential). Project involves processing of huge amount of data.",
+            "description": "Public sector related projects (confidential). Project involves processing of huge amount of data in microservices-based architecture.",
             "activities": [
                 "Developing high throughput microservices and queue processing systems",
+                "Writing Gradle plugins to ease the contignous delivery process",
                 "UI development involving Angular Material Design, Meteor and Node.js",
-                "Backend development in Node.js, Java 8, Spring",
+                "Backend development in Node.js, Java 12, Spring Boot",
                 "Analyzing production memory and performance problems",
                 "Support for Android team in developing native features"
             ],
             "technologies": [
-                "Java 11",
-                "Spring",
+                "Java 12",
+                "Spring Boot",
                 "Vert.x",
                 "Angular 1.4",
                 "Meteor",
