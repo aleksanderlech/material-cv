@@ -137,5 +137,8 @@
       }
     }
   },
-  "defaultProject": "cloud-cv"
+  "defaultProject": "cloud-cv",
+  "cli": {
+    "analytics": "26209a74-d2d6-43ae-84b8-5774ea0a0db4"
+  }
 }
