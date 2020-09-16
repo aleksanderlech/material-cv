@@ -10,6 +10,7 @@
             "linkedin": "http://linkedin.com/in/aleksanderlech",
             "twitter": "https://twitter.com/AleksanderLech",
             "skype": "skype://aleks_gd",
+            "stackOverflow": "https://stackoverflow.com/users/2440071/aleksander-lech",
             "website": "aleksander-lech.com",
             "cv": "https://drive.google.com/file/d/1t2oH0EVVHIEFDoB02zGKrOhBM6O9Jv9c/view?usp=sharing"
         }
@@ -42,21 +43,26 @@
             "location": "Dubai",
             "description": "Public sector related projects (confidential). Project involves processing of huge amount of data in microservices-based architecture.",
             "activities": [
-                "Developing high throughput microservices and queue processing systems",
-                "Writing Gradle plugins to ease the contignous delivery process",
+                "Developing high throughput REST microservices and queue processing systems",
+                "Writing Gradle, Ansible plugins to ease the continuous delivery process",
                 "UI development involving Angular Material Design, Meteor and Node.js",
-                "Backend development in Node.js, Java 12, Spring Boot",
+                "Backend development in Java 14, Spring Boot, Node.js",
                 "Analyzing production memory and performance problems",
                 "Support for Android team in developing native features"
             ],
             "technologies": [
-                "Java 12",
+                "Java 14",
                 "Spring Boot",
+                "Project Reactor",
                 "Vert.x",
                 "Angular 1.4",
                 "Meteor",
                 "Node JS",
+                "Neo4j",
+                "Kafka",
+                "Kafka Connect",
                 "MongoDB",
+                "Elastic Search",
                 "Rabbit MQ",
                 "REST",
                 "Android 6.0",
@@ -65,9 +71,11 @@
                 "Maven",
                 "Team City",
                 "BitBucket",
+                "GitLab",
                 "Docker",
+                "Ansible",
                 "Graphana",
-                "Elastic Search",
+                "Loki",
                 "Kibana"
             ]
         },

@@ -39,6 +39,7 @@ export interface Contact {
     twitter: String;
     skype: String;
     website: String;
+    stackOverflow: String;
     cv: String;
 }
 
