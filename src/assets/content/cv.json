@@ -44,30 +44,34 @@
             "description": "Public sector related projects (confidential). Project involves processing of huge amount of data in microservices-based architecture.",
             "activities": [
                 "Leading the team technology and architecture directions to keep the stack up-to-date. Providing company-wide standards for Java and Spring Boot services development.",
-                "Developing high throughput REST microservices and queue processing systems",
-                "Writing Gradle, Ansible plugins to ease the continuous delivery process",
+                "Developing high throughput REST microservices and queue processing systems using Kafka",
+                "DevOps: writing Gradle and Ansible plugins to ease the continuous delivery process",
                 "Introduced Sonar to keep track of the code test coverage and quality",
                 "Designed and deployed a huge on-premises S3 Object storage using Minio and Ansible",
+                "Development of batch framework and advanced metrics for Neo4j databases",
                 "Analyzing production memory and performance problems",
                 "UI development involving Angular Material Design, Meteor and Node.js",
                 "Support for Android team in developing native features",
                 "Contributing to open source communities like GitHub or Stack Overflow. Participating in JavaOne conferences in San Francisco."
             ],
             "technologies": [
-                "Java 15",
+                "Java 19",
                 "Spring Boot",
                 "Project Reactor",
-                "Vert.x",
-                "Angular 1.4",
-                "Node JS",
+                "Python",
                 "Neo4j",
                 "Kafka",
                 "Kafka Connect",
                 "MongoDB",
                 "Elastic Search",
+                "Minio S3",
+                "Docker",
+                "Kubernetes",
+                "Angular",
+                "Node JS",
                 "Rabbit MQ",
                 "REST",
-                "Android 6.0",
+                "Android",
                 "Git",
                 "Gradle",
                 "Maven",
@@ -75,12 +79,12 @@
                 "Team City",
                 "BitBucket",
                 "GitLab",
-                "Docker",
+                "BigData",
                 "Ansible",
-                "Graphana",
+                "Grafana",
                 "Loki",
                 "Kibana",
-                "Minio S3"
+                "Vert.x"
             ]
         },
         {
@@ -93,7 +97,8 @@
             "activities": [
                 "Create a framework for fast reading of huge table-based files used for NAPA and AutoCare file formats",
                 "Implement NAPA formats data import into the STEP",
-                "Scrum Master role"
+                "Scrum Master role",
+                "Awarded with 'Easy to Do Business With' award"
             ],
             "technologies": [
                 "OSGI",
