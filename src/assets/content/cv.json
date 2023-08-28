@@ -12,7 +12,7 @@
             "skype": "skype://aleks_gd",
             "stackOverflow": "https://stackoverflow.com/users/2440071/aleksander-lech",
             "website": "aleksander-lech.com",
-            "cv": "https://drive.google.com/file/d/1t2oH0EVVHIEFDoB02zGKrOhBM6O9Jv9c/view?usp=sharing"
+            "cv": "https://drive.google.com/file/d/1Jdzk3BlnJJgMCYjfVf1PTrd7y-dktqfs/view?usp=sharing"
         }
     },
     "education": [
@@ -52,7 +52,8 @@
                 "Analyzing production memory and performance problems",
                 "UI development involving Angular Material Design, Meteor and Node.js",
                 "Support for Android team in developing native features",
-                "Contributing to open source communities like GitHub or Stack Overflow. Participating in JavaOne conferences in San Francisco."
+                "Contributing to open source communities like GitHub or Stack Overflow.",
+                "Frequent conference participant of JavaOne, UberConf in San Francisco, Las Vegas and Denver."
             ],
             "technologies": [
                 "Java 19",
@@ -64,6 +65,7 @@
                 "Kafka Connect",
                 "MongoDB",
                 "Elastic Search",
+                "Kubernetes",
                 "Minio S3",
                 "Docker",
                 "Kubernetes",
@@ -410,6 +412,24 @@
                 "da2.png",
                 "da4.png",
                 "da5.png"
+            ]
+        },
+        {
+            "name": "Mirracle - a magic mirror",
+            "from": "2018",
+            "to": "2018",
+            "location": "Dubai",
+            "description": "A project siminal to MagicMirror but written entirely in JavaFX. A framework with custom widgets to support display behind the mirrors.",
+            "activities": [
+                "Designed the framework based on the reactive Java, Spring Boot and JavaFX for the various UI widgets",
+                "Deployment to the Raspberry PI device",
+                "Requirements and design coordination"
+            ],
+            "technologies": [
+                "Java 11", "JavaFX", "Spring Boot", "Ptoject Reactor", "Gradle", "Raspberry PI", "Git"
+            ],
+            "media": [
+                "mirracle.jpg"
             ]
         },
         {
