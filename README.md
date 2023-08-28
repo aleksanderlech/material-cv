@@ -11,7 +11,7 @@ To change the CV content go to the `/src/assets/content` directory and edit `cv.
 
 ## Building
 
-Run `npm install` and then `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Run `npm install` and then `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--configuration production` flag for a production build.
 
 ## Runing the project locally
 Run `npm start`
