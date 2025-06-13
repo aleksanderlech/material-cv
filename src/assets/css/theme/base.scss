@@ -1,3 +1,5 @@
+@use 'sass:color';
+
 /* ======= Base ======= */
 body {
     font-family: 'Roboto', sans-serif;  
@@ -20,7 +22,7 @@ a {
     @include transition (all 0.4s ease-in-out);
     &:hover {
         text-decoration: underline;
-        color: darken($theme-color, 15%);
+        color: color.adjust($theme-color, $lightness: -15%);
     }
     &:focus {
         text-decoration: none;
@@ -32,7 +34,7 @@ p {
 }
 
 .btn, a.btn {
-    background: darken($theme-color, 10%);
+    background: color.adjust($theme-color, $lightness: -10%);
     color: #fff;
     padding: 8px 15px;
     @include border-radius(2px);
@@ -42,14 +44,14 @@ p {
     font-size:14px;
     &:hover {
         color: #fff;
-        background: darken($theme-color, 5%);
+        background: color.adjust($theme-color, $lightness: -5%);
     }
     
 }
 
 #topcontrol {
     @include transition (all 0.4s ease-in-out);
-    background: darken($theme-color, 10%);
+    background: color.adjust($theme-color, $lightness: -10%);
     color: #fff;
     text-align: center;
     display: inline-block;
@@ -59,7 +61,7 @@ p {
     @include border-radius(50%);
     @include box-shadow(0 6px 10px 0 rgba(0,0,0,0.3));
     &:hover {
-        background: darken($theme-color, 15%);
+        background: color.adjust($theme-color, $lightness: -15%);
         color: #fff;
     }
     .svg-inline--fa {
@@ -77,7 +79,7 @@ p {
 }
 
 .page-nav-wrapper {
-    background: darken($theme-color, 15%);
+    background: color.adjust($theme-color, $lightness: -15%);
     padding-top: 20px;
     padding-bottom: 20px;
     position: absolute;

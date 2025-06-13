@@ -1,5 +1,6 @@
 @import "src/assets/css/theme-1";
 @import "src/assets/css/theme/base";
+@use 'sass:color';
 
 section {
     // Isotope container styling
@@ -66,7 +67,7 @@ section {
         position: relative;
         @include box-shadow(0 1px 4px 0 rgba(0,0,0,0.14));
         &:hover {
-           background: lighten($theme-color, 2%); 
+           background: color.adjust($theme-color, $lightness: 2%);
            img {
                @include opacity(0.9);
            }
