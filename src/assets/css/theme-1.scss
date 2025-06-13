@@ -36,12 +36,12 @@ $theme-15:#9C27B0; //Purple
 $theme-16:#E91E63; //Pink
 
 
-/*************************** Theme Styles ****************************/
+/*************************** Theme Styles ***************************/
 // Import theme styles
 @import "theme/mixins";
 @import "theme/base";
 @import "theme/responsive";
-@import "theme/demo"; //REMOVE ON YOUR PRODUCTION SITE 
+@import "theme/demo"; //REMOVE ON YOUR PRODUCTION SITE
 
 
 

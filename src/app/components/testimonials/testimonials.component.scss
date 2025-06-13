@@ -1,5 +1,6 @@
 @import "src/assets/css/theme-1";
 @import "src/assets/css/theme/base";
+@use 'sass:color';
 
 section {
     .testimonials-carousel {
@@ -49,7 +50,7 @@ section {
         margin-bottom: 0;
         
         li {
-            background-color: lighten($text-grey, 20%);
+            background-color: color.adjust($text-grey, $lightness: 20%);
             border: none;
             width: 10px;
             height: 10px;

@@ -1,5 +1,6 @@
 @import "src/assets/css/theme-11";
 @import "src/assets/css/theme/base";
+@use 'sass:color';
 
 header {
     background: $theme-color;
@@ -70,7 +71,7 @@ header {
     }
     
     .intro {
-        background: darken($theme-color, 5%);
+        background: color.adjust($theme-color, $lightness: -5%);
         padding-top: 90px;
         padding-bottom: 60px;
         position: relative;
@@ -83,7 +84,7 @@ header {
     }
     
     .contact-info {
-        background: darken($theme-color, 10%);
+        background: color.adjust($theme-color, $lightness: -10%);
         padding-top: 30px;
         padding-bottom: 30px;
         font-size: 16px;
