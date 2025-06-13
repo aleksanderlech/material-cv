@@ -2,6 +2,21 @@
 @import "src/assets/css/theme/base";
 
 section {
+    // Isotope container styling
+    .isotope {
+        transition: height 0.4s;
+        
+        // Initially hide items to prevent flash of unstyled content
+        .item {
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+        
+        // Show items when Isotope is initialized
+        &.isotope-initialized .item {
+            opacity: 1;
+        }
+    }
     .filters {
         list-style: none;
         margin: 0 auto;
@@ -29,8 +44,19 @@ section {
     }
     .item {
         margin-bottom: 30px;
+        // Ensure proper sizing and prevent overlapping
+        width: 100%;
+        min-height: 150px;
+        
         .figure {
-            margin-bottom:0;
+            margin-bottom: 0;
+            
+            img {
+                width: 100%;
+                height: auto;
+                max-width: 100%;
+                display: block;
+            }
         }
     }
     .item-inner {
