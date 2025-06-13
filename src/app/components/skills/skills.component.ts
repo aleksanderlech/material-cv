@@ -2,9 +2,10 @@ declare var $: any;
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'cv-skills',
-  templateUrl: './skills.component.html',
-  styleUrls: ['./skills.component.scss']
+    selector: 'cv-skills',
+    templateUrl: './skills.component.html',
+    styleUrls: ['./skills.component.scss'],
+    standalone: false
 })
 export class SkillsComponent implements OnInit {
   ngOnInit() {

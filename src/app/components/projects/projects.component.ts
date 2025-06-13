@@ -5,8 +5,9 @@ import { Project } from "../../services/resume.model";
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'cv-projects',
-  templateUrl: './projects.component.html'
+    selector: 'cv-projects',
+    templateUrl: './projects.component.html',
+    standalone: false
 })
 export class ProjectsComponent {
   @Input() projects: Project[];

@@ -3,9 +3,10 @@ import { Input, Output, Component, OnInit } from '@angular/core';
 import { Company } from '../../services/resume.model';
 
 @Component({
-  selector: 'cv-portfolio',
-  templateUrl: './portfolio.component.html',
-  styleUrls: ['./portfolio.component.scss']
+    selector: 'cv-portfolio',
+    templateUrl: './portfolio.component.html',
+    styleUrls: ['./portfolio.component.scss'],
+    standalone: false
 })
 export class PortfolioComponent implements OnInit {
 

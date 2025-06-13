@@ -5,9 +5,10 @@ import { Initiative } from "../../services/resume.model";
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'cv-initiatives',
-  templateUrl: './initiatives.component.html',
-  styleUrls: ['./initiatives.component.scss']
+    selector: 'cv-initiatives',
+    templateUrl: './initiatives.component.html',
+    styleUrls: ['./initiatives.component.scss'],
+    standalone: false
 })
 export class InitiativesComponent {
   @Input() initiatives: Initiative[];
