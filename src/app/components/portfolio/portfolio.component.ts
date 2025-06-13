@@ -17,30 +17,45 @@ export class PortfolioComponent implements OnInit {
   }
 
   ngOnInit() {
+    // Delay initialization to ensure the DOM is ready and images start loading
+    setTimeout(() => {
+      this.initializeIsotope();
+    }, 100);
+  }
+
+  private initializeIsotope() {
     /* ======= Isotope plugin ======= */
     /* Ref: http://isotope.metafizzy.co/ */
-    // init Isotope    
-    var $container = $('.isotope');
+    const $container = $('.isotope');
     
-    $container.imagesLoaded(function () {
-        $('.isotope').isotope({
-            itemSelector: '.item'
-        });
+    // Wait for images to load before initializing Isotope
+    $container.imagesLoaded(() => {
+      // Initialize Isotope
+      $container.isotope({
+        itemSelector: '.item',
+        layoutMode: 'fitRows'
+      });
+      
+      // Add class to show items and force a layout refresh
+      setTimeout(() => {
+        $container.addClass('isotope-initialized');
+        $container.isotope('layout');
+      }, 200);
     });
     
     // filter items on click
-    $('#filters').on( 'click', '.type', function() {
-    var filterValue = $(this).attr('data-filter');
-    $container.isotope({ filter: filterValue });
+    $('#filters').on('click', '.type', function() {
+      const filterValue = $(this).attr('data-filter');
+      $container.isotope({ filter: filterValue });
     });
     
     // change is-checked class on buttons
-    $('.filters').each( function( i, typeGroup ) {
-        var $typeGroup = $( typeGroup );
-        $typeGroup.on( 'click', '.type', function() {
+    $('.filters').each(function(i, typeGroup) {
+      const $typeGroup = $(typeGroup);
+      $typeGroup.on('click', '.type', function() {
         $typeGroup.find('.active').removeClass('active');
-        $( this ).addClass('active');
-        });
+        $(this).addClass('active');
+      });
     });
   }
 }
