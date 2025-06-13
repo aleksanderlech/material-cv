@@ -1,9 +1,6 @@
 import { NgModule } from '@angular/core';
 import { DataService } from './data.service';
-import { HttpClientModule } from '@angular/common/http';
+import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 
-@NgModule({
-  imports: [ HttpClientModule ],
-  providers: [ DataService ]
-})
+@NgModule({ imports: [], providers: [DataService, provideHttpClient(withInterceptorsFromDi())] })
 export class ServicesModule {}
