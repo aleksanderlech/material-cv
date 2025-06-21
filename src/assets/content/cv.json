@@ -2,7 +2,7 @@
     "profile": {
         "name": "Aleksander Lech",
         "title": "Senior Software Engineer & Architect",
-        "summary": "In 2009 I have graduated from the Gdansk University of Technology at the Faculty of Technical Physics and Applied Mathematics with Masters of Science in Applied Computer Science, Engineer degree. I have started my professional career a long time before graduation though.\n\n During my over 10 years’ journey through the software development world, I have been allowed to participate in many interesting projects for various sectors. \n\nI like digging into technology-related topics, solving challenging problems as well as supporting other teammates. I also have strong foundations in API and framework design as well as DevOps.\nI believe that solid, clean and quality code is a key to success. That way of thinking always used to build enough trust within the organization to reward me with architect or techleading roles.\n\nMy prefered language was always been Java that I also consider as my primary language however I do have a lot of experience with full-stack development and other languages as well.",
+        "summary": "In 2009 I graduated from the Gdansk University of Technology at the Faculty of Technical Physics and Applied Mathematics with Masters of Science in Applied Computer Science, Engineer degree. I have started my professional career a long time before graduation though.\n\n During my 10+’ journey through the software development world, I have had the opportunity to participate in many interesting projects for various sectors. \n\nI like digging into technology-related topics, solving challenging problems as well as supporting other teammates. I also have strong foundations in API and framework design as well as DevOps.\nI believe that solid, clean and quality code is a key to success. That way of thinking always used to build enough trust within the organization to reward me with architect or techleading roles.\n\nMy preferred language has always been Java, which I also consider my primary language. However, I do have a lot of experience with full-stack development and other languages as well.",
         "contact": {
             "phone": "+971 58 28 29 516",
             "mail": "me@aleksander-lech.com",
@@ -31,7 +31,7 @@
         {
             "name" : "Scrum Master",
             "period": "2017",
-            "description" : "Successfully completed 2 days Scrum Master training held in Dubai."
+            "description" : "Successfully completed 2 days Scrum Master training in Dubai."
         }
     ],
     "projects": [
@@ -41,7 +41,7 @@
             "from": "08/2017",
             "to": "Present",
             "location": "Dubai",
-            "description": "Public sector related projects (confidential). Project involves processing of huge amount of data in microservices-based architecture.",
+            "description": "Public sector-related projects (confidential). Project involves processing of huge amount of data in microservices-based architecture.",
             "activities": [
                 "Leading the team technology and architecture directions to keep the stack up-to-date. Providing company-wide standards for Java and Spring Boot services development.",
                 "Developing high throughput REST microservices and queue processing systems using Kafka",
@@ -51,9 +51,9 @@
                 "Development of batch framework and advanced metrics for Neo4j databases",
                 "Analyzing production memory and performance problems",
                 "UI development involving Angular Material Design, Meteor and Node.js",
-                "Support for Android team in developing native features",
+                "Support for the Android team in developing native features",
                 "Contributing to open source communities like GitHub or Stack Overflow.",
-                "Frequent conference participant of JavaOne, UberConf in San Francisco, Las Vegas and Denver."
+                "Frequent participant in JavaOne conferences, UberConf in San Francisco, Las Vegas and Denver."
             ],
             "technologies": [
                 "Java 21",
@@ -122,7 +122,7 @@
             "activities": [
                 "Implementing core modules for the system",
                 "Supporting other teams in technology problems",
-                "Investigate production memory leaks and performance problems"
+                "Investigating production memory leaks and performance problems"
             ],
             "technologies": [
                 "Java EE 6",
@@ -381,7 +381,7 @@
             "from": "03/2016", 
             "to": "07/2017",
             "location": "Gdańsk",
-            "description": "Developed with other 3 teammates solution consists of 2 Android applications, Angular UI and REST services deployed in microservices concept and using NoSQL database. It also integrated Android Pay as well as other payments providers available in Poland. The project goal is to provide a modern solution for fast and comfortable products ordering in pubs/restaurants and what`s more, have fun while learning the newest trends/ technologies available :)",
+            "description": "Developed with other 3 teammates solution consists of 2 Android applications, Angular UI and REST services deployed in microservices concept and using NoSQL database. It also integrated Android Pay as well as other payments providers available in Poland. The project's goal is to provide a modern solution for fast and comfortable products ordering in pubs/restaurants and what's more, have fun while learning the newest trends/ technologies available :)",
             "activities": [
                 "Designed system architecture with microservices principles",
                 "Implemented payment system that on mobile and backend side that integrates external providers and Android Pay",
@@ -419,14 +419,14 @@
             "from": "2018",
             "to": "2018",
             "location": "Dubai",
-            "description": "A project siminal to MagicMirror but written entirely in JavaFX. A framework with custom widgets to support display behind the mirrors.",
+            "description": "A project similar to MagicMirror but written entirely in JavaFX. A framework with custom widgets to support display behind the mirrors.",
             "activities": [
                 "Designed the framework based on the reactive Java, Spring Boot and JavaFX for the various UI widgets",
                 "Deployment to the Raspberry PI device",
                 "Requirements and design coordination"
             ],
             "technologies": [
-                "Java 11", "JavaFX", "Spring Boot", "Ptoject Reactor", "Gradle", "Raspberry PI", "Git"
+                "Java 11", "JavaFX", "Spring Boot", "Project Reactor", "Gradle", "Raspberry PI", "Git"
             ],
             "media": [
                 "mirracle.jpg"
@@ -453,7 +453,7 @@
         {
             "name": "Benjamin Toft Jakobsen",
             "position": "Software architect, Stibo Systems",
-            "quote": "Aleksander Lech has been working for Stibo Systems since spring 2016 as a senior software developer and scrum master. Aleksander has managed to put a lot of structure on our project and he have done a great work with our integration to complex automotive formats, such as TecDoc, NAPA and AutoCare. He is a highly skilled developer, that always deliver high quality code, and improves all code he comes near. It has been a pleasure working with Aleksander, and I hereby give him my best recommendations."
+            "quote": "Aleksander Lech has been working for Stibo Systems since spring 2016 as a senior software developer and scrum master. Aleksander has managed to put a lot of structure on our project and he has done a great work with our integration to complex automotive formats, such as TecDoc, NAPA and AutoCare. He is a highly skilled developer, that always deliver high quality code, and improves all code he comes near. It has been a pleasure working with Aleksander, and I hereby give him my best recommendations."
         },
         {
             "name": "Jacek Wielich",
@@ -469,7 +469,7 @@
     "companies" : [
         { 
             "name": "ibm",
-            "sector": "Outsorcing"
+            "sector": "Outsourcing"
         },
         { 
             "name": "stibo",
@@ -493,11 +493,11 @@
         },
         { 
             "name": "sii",
-            "sector": "Outsorcing"
+            "sector": "Outsourcing"
         },
         { 
             "name": "speednet",
-            "sector": "Outsorcing"
+            "sector": "Outsourcing"
         },
         { 
             "name": "lhsystems",
@@ -505,7 +505,7 @@
         },
         { 
             "name": "astek",
-            "sector": "Outsorcing"
+            "sector": "Outsourcing"
         },
         { 
             "name": "nordea",
@@ -517,7 +517,7 @@
         }
     ],
     "offer" : {
-        "summary" : "I am currently actively seeking for new opportunities. I am open for permanent positions in Dubai or remote. Having an interesting idea or opportunity?",
+        "summary" : "I am currently actively seeking new opportunities. I am open for permanent positions in Dubai or remote. Having an interesting idea or opportunity?",
         "solutions": [
             "Application architecture",
             "Front-end development with AngularJS",
