@@ -33,6 +33,10 @@ module.exports = function (config) {
     autoWatch: true,
     browsers: ['Chrome'],
     singleRun: false,
-    restartOnFileChange: true
+    restartOnFileChange: true,
+
+    // This project currently has no *.spec.ts files.
+    // Without this, `ng test --watch=false` exits with code 1 on an empty suite.
+    failOnEmptyTestSuite: false
   });
 };
