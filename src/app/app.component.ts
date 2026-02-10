@@ -18,11 +18,18 @@ export class AppComponent implements OnInit {
   constructor(private dataService: DataService) { }
 
   ngOnInit() {
-    this.enableScrollSpy();
-    this.dataService.getData().subscribe(data => this.resume = data);
+    // Load data first; also avoid breaking the app if jQuery plugins aren't available yet.
+    this.dataService.getData().subscribe(data => {
+      this.resume = data;
+      this.enableScrollSpy();
+    });
   }
 
   private enableScrollSpy() {
+    // Guard: if external scripts (jQuery/Bootstrap plugins) aren't available, don't fail the whole app.
+    if (typeof $ === 'undefined') {
+      return;
+    }
 
     /* ======= Scrollspy ======= */
     $('body').scrollspy({ target: '#page-nav-wrapper', offset: 100 });
