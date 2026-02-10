@@ -11,6 +11,7 @@ import { ProjectsModule } from './components/projects/projects.component';
 import { InitiativesModule } from './components/initiatives/initiatives.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { ServicesModule } from './services/services.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { ServicesModule } from './services/services.module';
   ],
   imports: [
     CommonModule,
+    HttpClientModule,
     ServicesModule,
     BrowserModule,
     ProjectsModule,

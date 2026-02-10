@@ -1,6 +1,6 @@
 declare var $: any;
 
-import { Component, Output, EventEmitter } from '@angular/core';
+import { Component, Output, EventEmitter, ChangeDetectorRef } from '@angular/core';
 import { DataService } from './services/data.service';
 import { OnInit } from '@angular/core';
 import { Resume } from "./services/resume.model";
@@ -15,14 +15,28 @@ export class AppComponent implements OnInit {
 
   resume: Resume;
 
-  constructor(private dataService: DataService) { }
+  constructor(private dataService: DataService, private cdr: ChangeDetectorRef) { }
 
   ngOnInit() {
-    this.enableScrollSpy();
-    this.dataService.getData().subscribe(data => this.resume = data);
+    // Load data first; also avoid breaking the app if jQuery plugins aren't available yet.
+    this.dataService.getData().subscribe({
+      next: (data) => {
+        this.resume = data;
+        // In zoneless/optimized modes, async updates may not trigger change detection.
+        this.cdr.detectChanges();
+        this.enableScrollSpy();
+      },
+      error: (err) => {
+        console.error('Failed to load resume data', err);
+      }
+    });
   }
 
   private enableScrollSpy() {
+    // Guard: if external scripts (jQuery/Bootstrap plugins) aren't available, don't fail the whole app.
+    if (typeof $ === 'undefined') {
+      return;
+    }
 
     /* ======= Scrollspy ======= */
     $('body').scrollspy({ target: '#page-nav-wrapper', offset: 100 });
