@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { Observable, from } from 'rxjs';
 import { Resume } from './resume.model';
 
 @Injectable({
@@ -11,7 +11,8 @@ export class DataService {
   constructor(private http: HttpClient) { }
 
   public getData(): Observable<Resume> {
-    return this.http.get<Resume>("./assets/content/cv.json");
+    // Using fetch here is the simplest/most robust way to load a static JSON asset.
+    return from(fetch("./assets/content/cv.json").then(r => r.json() as Promise<Resume>));
   }
 
 }
