@@ -211,6 +211,15 @@ a {
   padding: 40px 15px;
   max-width: 1200px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+// Reset margin since we're using gap
+.wrapper > .section,
+.wrapper > [class*="-section"] {
+  margin-bottom: 0 !important;
 }
 
 .section {
@@ -220,7 +229,7 @@ a {
   border: 1px solid var(--glass-border);
   border-radius: var(--radius-lg);
   padding: 50px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   transition: var(--transition-normal);
   
   &:hover {
