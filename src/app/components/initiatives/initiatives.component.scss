@@ -9,42 +9,11 @@ section.initiatives-section {
         position: relative;
     }
 
-    .carousel-indicators {
-        position: relative;
-        bottom: auto;
-        margin: 0 0 30px 0;
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-
-        li, button {
-            background-color: var(--glass-border);
-            border: none;
-            width: 12px;
-            height: 12px;
-            margin: 0;
-            border-radius: 50%;
-            cursor: pointer;
-            transition: var(--transition-fast);
-            opacity: 1;
-
-            &:hover {
-                background-color: rgba(var(--accent-primary-rgb), 0.5);
-            }
-
-            &.active {
-                background: var(--gradient-primary);
-                box-shadow: 0 0 15px rgba(var(--accent-primary-rgb), 0.5);
-            }
-        }
-    }
-
     .carousel-inner {
         overflow: visible;
     }
 
     .carousel-item {
-        // Remove default Bootstrap carousel transitions that cause issues
         &.active {
             display: block;
         }
@@ -55,7 +24,7 @@ section.initiatives-section {
         background: var(--glass-bg);
         border: 1px solid var(--glass-border);
         border-radius: var(--radius-lg);
-        padding: 35px;
+        padding: 30px;
         transition: var(--transition-normal);
 
         &:hover {
@@ -109,12 +78,12 @@ section.initiatives-section {
     .initiative-desc {
         color: var(--text-secondary);
         font-size: 15px;
-        line-height: 1.8;
-        margin-bottom: 25px;
+        line-height: 1.7;
+        margin-bottom: 20px;
     }
 
     .initiative-activities {
-        margin-bottom: 25px;
+        margin-bottom: 20px;
 
         ul {
             list-style: none;
@@ -148,8 +117,8 @@ section.initiatives-section {
     .initiative-tech {
         display: flex;
         flex-wrap: wrap;
-        gap: 10px;
-        margin-bottom: 25px;
+        gap: 8px;
+        margin-bottom: 20px;
 
         .job-technology {
             padding: 6px 14px;
@@ -171,8 +140,8 @@ section.initiatives-section {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        gap: 20px;
-        padding-top: 10px;
+        gap: 15px;
+        padding-top: 5px;
 
         img.screenshot {
             max-width: 280px;

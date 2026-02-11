@@ -11,22 +11,20 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
             <div class="item carousel-item" *ngFor="let testimonial of testimonials ; let index = index" [class.active]="index == 0">
-                <blockquote class="quote">
-                    <p>
-                        <span class="icon-holder">
-                            <i class="fas fa-quote-left"></i>
-                        </span>
-                        {{testimonial.quote}}
-                    </p>
-                </blockquote>
-                <div class="source">
-                    <div class="name">{{testimonial.name}}</div>
-                    <div class="position">{{testimonial.position}}</div>
+                <div class="testimonial-content">
+                    <div class="icon-holder">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <blockquote class="quote">
+                        <p>{{testimonial.quote}}</p>
+                    </blockquote>
+                    <div class="source">
+                        <div class="name">{{testimonial.name}}</div>
+                        <div class="position">{{testimonial.position}}</div>
+                    </div>
                 </div>
-                <!--//source-->
             </div>
         </div>
     </div>
 
 </section>
-<!--//section-->

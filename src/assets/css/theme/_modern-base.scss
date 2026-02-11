@@ -208,7 +208,7 @@ a {
 // ============================================
 
 .wrapper {
-  padding: 60px 0;
+  padding: 40px 15px;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -219,12 +219,17 @@ a {
   -webkit-backdrop-filter: blur(var(--glass-blur));
   border: 1px solid var(--glass-border);
   border-radius: var(--radius-lg);
-  padding: 60px;
-  margin-bottom: 40px;
+  padding: 50px;
+  margin-bottom: 30px;
   transition: var(--transition-normal);
   
   &:hover {
     border-color: rgba(var(--accent-primary-rgb), 0.2);
+  }
+
+  // Last section no margin
+  &:last-child {
+    margin-bottom: 0;
   }
 }
 
@@ -232,19 +237,53 @@ a {
   font-size: 2rem;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 50px;
+  margin-top: 0;
+  margin-bottom: 40px;
   position: relative;
   
   &::after {
     content: '';
     position: absolute;
-    bottom: -15px;
+    bottom: -12px;
     left: 50%;
     transform: translateX(-50%);
     width: 60px;
     height: 4px;
     background: var(--gradient-primary);
     border-radius: var(--radius-full);
+  }
+}
+
+// Carousel indicators global style
+.carousel-indicators {
+  position: relative;
+  bottom: auto;
+  margin: 0 0 25px 0;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding: 0;
+  list-style: none;
+
+  li, button {
+    background-color: var(--glass-border);
+    border: none;
+    width: 10px;
+    height: 10px;
+    margin: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: var(--transition-fast);
+    opacity: 1;
+
+    &:hover {
+      background-color: rgba(var(--accent-primary-rgb), 0.5);
+    }
+
+    &.active {
+      background: var(--gradient-primary);
+      box-shadow: 0 0 12px rgba(var(--accent-primary-rgb), 0.5);
+    }
   }
 }
 
@@ -279,8 +318,17 @@ a {
   position: relative;
   padding: 0 0 0 40px;
   margin-left: 0;
-  border-left: 2px solid;
-  border-image: var(--gradient-primary) 1;
+  
+  // Timeline line - stops at last item's node
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 13px; // Align with first node center
+    bottom: 13px; // Stop at last node center
+    width: 2px;
+    background: var(--gradient-primary);
+  }
   
   .item {
     position: relative;
