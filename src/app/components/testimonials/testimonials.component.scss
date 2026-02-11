@@ -1,70 +1,126 @@
-@use 'sass:color';
-@import "src/assets/css/theme-1";
-@import "src/assets/css/theme/base";
+// ============================================
+// Modern Testimonials Component Styles
+// ============================================
 
-section {
+section.testimonials-section {
     .testimonials-carousel {
         max-width: 800px;
-        min-height: 350px;
+        min-height: 300px;
         margin: 0 auto;
+        position: relative;
     }
+
     .item {
-       padding-left: 60px;
-       margin-bottom: 45px;  
-           
+        padding-left: 70px;
+        margin-bottom: 60px;
     }
+
     .quote {
         border-left: none;
         padding: 0;
-        font-size: 22px;
-        color: $text-color-secondary;
+        font-size: 1.25rem;
+        color: var(--text-secondary);
         font-weight: 300;
+        line-height: 1.8;
         position: relative;
+        font-style: italic;
+
+        p {
+            margin: 0;
+        }
     }
+
     .source {
+        margin-top: 25px;
+
         .name {
-            font-size: 16px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 5px;
         }
+
         .position {
-           color: $text-grey; 
+            color: var(--accent-primary);
+            font-size: 14px;
         }
     }
+
     .icon-holder {
         position: absolute;
-        left: -60px;
+        left: -70px;
         top: 0;
-        width:36px;
-        height: 36px;
-        display: inline-block;
-        background: $theme-color;
-        color: #fff;
-        @include border-radius(50%);
-        text-align: center;
-        font-size: 16px;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--gradient-primary);
+        color: var(--text-primary);
+        border-radius: 50%;
+        font-size: 20px;
+        box-shadow: 0 0 30px rgba(var(--accent-primary-rgb), 0.4);
+
         .svg-inline--fa {
-	        margin-top: 8px;
+            margin: 0;
         }
     }
+
     .carousel-indicators {
         bottom: 0;
         margin-bottom: 0;
-        
-        li {
-            background-color: color.adjust($text-grey, $lightness: 20%);
+        position: relative;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+
+        li, button {
+            background-color: var(--glass-border);
             border: none;
-            width: 10px;
-            height: 10px;
+            width: 12px;
+            height: 12px;
             margin: 0;
-            margin-right: 8px;
-            @include border-radius(50%);
+            border-radius: 50%;
             cursor: pointer;
-            &.active {
-                background-color: $theme-color;
-                width: 10px;
-                height: 10px;
-                margin: 0;
-                margin-right: 8px;
+            transition: var(--transition-fast);
+            opacity: 1;
+
+            &:hover {
+                background-color: rgba(var(--accent-primary-rgb), 0.5);
             }
+
+            &.active {
+                background: var(--gradient-primary);
+                width: 12px;
+                height: 12px;
+                margin: 0;
+                box-shadow: 0 0 15px rgba(var(--accent-primary-rgb), 0.5);
+            }
+        }
+    }
+}
+
+// Responsive
+@media (max-width: 768px) {
+    section.testimonials-section {
+        .item {
+            padding-left: 0;
+            padding-top: 60px;
+        }
+
+        .icon-holder {
+            left: 50%;
+            transform: translateX(-50%);
+            top: 0;
+        }
+
+        .quote {
+            text-align: center;
+            font-size: 1.1rem;
+        }
+
+        .source {
+            text-align: center;
         }
     }
 }

@@ -1,0 +1,511 @@
+@use 'sass:color';
+
+// ============================================
+// Modern High-Tech Theme Base
+// ============================================
+
+// CSS Custom Properties for theming
+:root {
+  // Background colors
+  --bg-primary: #0a0a0f;
+  --bg-secondary: #12121a;
+  --bg-tertiary: #1a1a24;
+  --bg-card: rgba(26, 26, 36, 0.8);
+  
+  // Text colors
+  --text-primary: #ffffff;
+  --text-secondary: #a0a0b0;
+  --text-muted: #6a6a7a;
+  
+  // Accent colors (Cyan to Purple gradient)
+  --accent-primary: #00d4ff;
+  --accent-secondary: #7b2fff;
+  --accent-tertiary: #ff2daa;
+  
+  // RGB versions for rgba() usage
+  --accent-primary-rgb: 0, 212, 255;
+  --accent-secondary-rgb: 123, 47, 255;
+  --accent-tertiary-rgb: 255, 45, 170;
+  
+  // Gradients
+  --gradient-primary: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+  --gradient-secondary: linear-gradient(135deg, var(--accent-secondary), var(--accent-tertiary));
+  --gradient-text: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary), var(--accent-tertiary));
+  
+  // Glass effect
+  --glass-bg: rgba(255, 255, 255, 0.05);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --glass-blur: 20px;
+  
+  // Shadows
+  --shadow-sm: 0 2px 10px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.5);
+  --shadow-glow: 0 0 30px rgba(var(--accent-primary-rgb), 0.3);
+  
+  // Border radius
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-full: 9999px;
+  
+  // Transitions
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.5s ease;
+}
+
+// ============================================
+// Base Styles
+// ============================================
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  
+  // Subtle grid pattern background
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 50px 50px;
+  background-attachment: fixed;
+}
+
+// Typography
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--text-primary);
+}
+
+h1 { font-size: 3.5rem; }
+h2 { font-size: 2.5rem; }
+h3 { font-size: 1.75rem; }
+h4 { font-size: 1.25rem; }
+
+p {
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+// Code/monospace text
+.mono, code {
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+}
+
+// Links
+a {
+  color: var(--accent-primary);
+  text-decoration: none;
+  transition: var(--transition-fast);
+  
+  &:hover {
+    color: var(--accent-secondary);
+    text-decoration: none;
+  }
+}
+
+// ============================================
+// Glassmorphism Card
+// ============================================
+
+.glass-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-md);
+  transition: var(--transition-normal);
+  
+  &:hover {
+    border-color: rgba(var(--accent-primary-rgb), 0.3);
+    box-shadow: var(--shadow-glow);
+  }
+}
+
+// ============================================
+// Gradient Text
+// ============================================
+
+.gradient-text {
+  background: var(--gradient-text);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradientShift 3s ease infinite;
+}
+
+// ============================================
+// Buttons
+// ============================================
+
+.btn, a.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  transition: var(--transition-normal);
+  text-decoration: none;
+  
+  &.btn-primary {
+    background: var(--gradient-primary);
+    color: var(--text-primary);
+    box-shadow: 0 4px 15px rgba(var(--accent-primary-rgb), 0.4);
+    
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 25px rgba(var(--accent-primary-rgb), 0.6);
+      color: var(--text-primary);
+    }
+  }
+  
+  &.btn-outline {
+    background: transparent;
+    border: 2px solid var(--accent-primary);
+    color: var(--accent-primary);
+    
+    &:hover {
+      background: var(--accent-primary);
+      color: var(--bg-primary);
+      box-shadow: 0 0 20px rgba(var(--accent-primary-rgb), 0.5);
+    }
+  }
+  
+  &.btn-glass {
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+    color: var(--text-primary);
+    
+    &:hover {
+      border-color: var(--accent-primary);
+      box-shadow: 0 0 20px rgba(var(--accent-primary-rgb), 0.3);
+      color: var(--text-primary);
+    }
+  }
+}
+
+// ============================================
+// Section Styles
+// ============================================
+
+.wrapper {
+  padding: 60px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section {
+  background: var(--glass-bg);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-lg);
+  padding: 60px;
+  margin-bottom: 40px;
+  transition: var(--transition-normal);
+  
+  &:hover {
+    border-color: rgba(var(--accent-primary-rgb), 0.2);
+  }
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 50px;
+  position: relative;
+  
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background: var(--gradient-primary);
+    border-radius: var(--radius-full);
+  }
+}
+
+// ============================================
+// Skill Tags
+// ============================================
+
+.skill-tag, .job-technology {
+  display: inline-block;
+  padding: 6px 14px;
+  margin: 4px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--accent-primary);
+  background: rgba(var(--accent-primary-rgb), 0.1);
+  border: 1px solid rgba(var(--accent-primary-rgb), 0.3);
+  border-radius: var(--radius-full);
+  transition: var(--transition-fast);
+  
+  &:hover {
+    background: rgba(var(--accent-primary-rgb), 0.2);
+    box-shadow: 0 0 15px rgba(var(--accent-primary-rgb), 0.3);
+    transform: translateY(-2px);
+  }
+}
+
+// ============================================
+// Timeline
+// ============================================
+
+.timeline {
+  position: relative;
+  padding: 0 0 0 40px;
+  margin-left: 0;
+  border-left: 2px solid;
+  border-image: var(--gradient-primary) 1;
+  
+  .item {
+    position: relative;
+    margin-bottom: 50px;
+    padding-left: 30px;
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+    
+    // Timeline node
+    &::before {
+      content: '';
+      position: absolute;
+      left: -49px;
+      top: 5px;
+      width: 16px;
+      height: 16px;
+      background: var(--bg-primary);
+      border: 3px solid var(--accent-primary);
+      border-radius: 50%;
+      box-shadow: 0 0 20px rgba(var(--accent-primary-rgb), 0.5);
+      animation: nodePulse 2s ease-in-out infinite;
+    }
+    
+    // Inner glow dot
+    &::after {
+      content: '';
+      position: absolute;
+      left: -44px;
+      top: 10px;
+      width: 6px;
+      height: 6px;
+      background: var(--accent-primary);
+      border-radius: 50%;
+    }
+  }
+  
+  .work-place {
+    position: relative;
+  }
+  
+  .place {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 10px;
+  }
+  
+  .location {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    color: var(--text-muted);
+    font-size: 14px;
+    
+    i, svg {
+      margin-right: 5px;
+      color: var(--accent-primary);
+    }
+  }
+  
+  .job-meta {
+    position: relative;
+    margin-bottom: 15px;
+    
+    .title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      background: var(--gradient-text);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      display: inline-block;
+    }
+    
+    .time {
+      display: block;
+      color: var(--text-muted);
+      font-size: 14px;
+      font-family: 'JetBrains Mono', monospace;
+      margin-top: 5px;
+    }
+  }
+  
+  .job-desc {
+    color: var(--text-secondary);
+    line-height: 1.7;
+  }
+}
+
+// ============================================
+// Progress/Chart
+// ============================================
+
+.chart-easy-pie {
+  position: relative;
+}
+
+.chart {
+  width: 120px;
+  height: 120px;
+  position: relative;
+  margin: 0 auto 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: 'JetBrains Mono', monospace;
+  color: var(--accent-primary);
+  
+  canvas {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+
+// ============================================
+// Social Icons
+// ============================================
+
+.social {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    color: var(--text-secondary);
+    font-size: 18px;
+    transition: var(--transition-normal);
+    
+    &:hover {
+      color: var(--accent-primary);
+      border-color: var(--accent-primary);
+      box-shadow: 0 0 20px rgba(var(--accent-primary-rgb), 0.4);
+      transform: translateY(-3px);
+    }
+  }
+}
+
+// ============================================
+// Scroll indicator
+// ============================================
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  
+  .mouse {
+    width: 26px;
+    height: 40px;
+    border: 2px solid var(--text-secondary);
+    border-radius: 13px;
+    position: relative;
+    
+    &::before {
+      content: '';
+      position: absolute;
+      top: 8px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 4px;
+      height: 8px;
+      background: var(--accent-primary);
+      border-radius: 2px;
+      animation: float 1.5s ease-in-out infinite;
+    }
+  }
+}
+
+// ============================================
+// Footer
+// ============================================
+
+.footer {
+  text-align: center;
+  padding: 40px;
+  color: var(--text-muted);
+  font-size: 14px;
+  
+  a {
+    color: var(--accent-primary);
+  }
+}
+
+// ============================================
+// Scrollbar Styling
+// ============================================
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent-primary);
+  border-radius: 4px;
+  
+  &:hover {
+    background: var(--accent-secondary);
+  }
+}
+
+// ============================================
+// Selection
+// ============================================
+
+::selection {
+  background: rgba(var(--accent-primary-rgb), 0.3);
+  color: var(--text-primary);
+}

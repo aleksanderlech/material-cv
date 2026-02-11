@@ -31,7 +31,7 @@
             ],
             "styles": [
               "src/styles.scss",
-              "src/assets/css/theme-1.scss"
+              "src/assets/css/theme-modern.scss"
             ],
             "scripts": [
               "src/assets/plugins/jquery-3.3.1.min.js",

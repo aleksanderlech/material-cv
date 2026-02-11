@@ -1,51 +1,100 @@
 <header class="header">
-    <div class="top-bar container-fluid">
-        <div class="actions">
-            <a class="btn d-none d-md-inline-block" [href]="'mailto:'+profile.contact.mail"><i class="fas fa-paper-plane" aria-hidden="true"></i> Hire Me</a>
-            <a class="btn" [href]="profile.contact.cv" target="_blank"><i class="fas fa-download" aria-hidden="true"></i> Download My Resume</a>
-        </div><!--//actions-->
-        <ul class="social list-inline">
-            <li class="list-inline-item"><a target="_blank" [href]="profile.contact.linkedin"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
-            <li class="list-inline-item"><a target="_blank" [href]="profile.contact.github"><i class="fab fa-github-alt" aria-hidden="true"></i></a></li>
-            <li class="list-inline-item"><a target="_blank" [href]="'skype://'+profile.contact.skype"><i class="fab fa-skype" aria-hidden="true"></i></a></li>
-            <li class="list-inline-item"><a target="_blank" [href]="profile.contact.stackOverflow"><i class="fab fa-stack-overflow" aria-hidden="true"></i></a></li>
-        </ul><!--//social-->
-    </div><!--//top-bar-->
-    
-    <div class="intro">
-        <div class="container text-center">
-            <img class="profile-image" src="assets/content/images/profile-image.png" alt="">
-            <h1 class="name">{{profile.name}}</h1>
-            <div class="title">{{profile.title}}</div>
-            <div class="profile">
-                <p>{{profile.summary}}</p>
-            </div><!--//profile-->
-        </div><!--//container-->
-    </div><!--//intro-->
-    
-    <div class="contact-info">
-        <div class="container text-center">
-            <ul class="list-inline">
-                <li class="email list-inline-item"><i class="fas fa-envelope"></i><a [href]="'mailto:'+profile.contact.mail">{{profile.contact.mail}}</a></li>
-                <li class="list-inline-item"><i class="fas fa-phone"></i> <a [href]="'tel:'+profile.contact.phone">{{profile.contact.phone}}</a></li>
-                <li class="website list-inline-item"><i class="fas fa-globe"></i><a href="#" target="_blank">{{profile.contact.website}}</a></li>
-            </ul>
-        </div><!--//container-->
-    </div><!--//contact-info-->
-    
+    <!-- Animated Background -->
+    <div class="hero-bg">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+    </div>
+
+    <!-- Top Navigation Bar -->
+    <nav class="top-nav">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo mono">&lt;AL/&gt;</div>
+                <ul class="social">
+                    <li><a target="_blank" [href]="profile.contact.linkedin" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+                    <li><a target="_blank" [href]="profile.contact.github" aria-label="GitHub"><i class="fab fa-github-alt" aria-hidden="true"></i></a></li>
+                    <li><a target="_blank" [href]="profile.contact.stackOverflow" aria-label="Stack Overflow"><i class="fab fa-stack-overflow" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <!-- Profile Image -->
+                <div class="profile-wrapper">
+                    <div class="profile-glow"></div>
+                    <img class="profile-image" src="assets/content/images/profile-image.png" alt="{{profile.name}}">
+                </div>
+
+                <!-- Name with typing effect -->
+                <h1 class="name">
+                    <span class="greeting mono">Hello, I'm</span>
+                    <span class="gradient-text">{{profile.name}}</span>
+                </h1>
+
+                <!-- Title -->
+                <div class="title-wrapper">
+                    <span class="title mono">{{profile.title}}</span>
+                    <span class="cursor">|</span>
+                </div>
+
+                <!-- Summary -->
+                <div class="profile-summary">
+                    <p>{{profile.summary}}</p>
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="cta-buttons">
+                    <a class="btn btn-primary" [href]="'mailto:'+profile.contact.mail">
+                        <i class="fas fa-paper-plane" aria-hidden="true"></i> Hire Me
+                    </a>
+                    <a class="btn btn-outline" [href]="profile.contact.cv" target="_blank">
+                        <i class="fas fa-download" aria-hidden="true"></i> Download CV
+                    </a>
+                </div>
+
+                <!-- Contact Pills -->
+                <div class="contact-pills">
+                    <a class="contact-pill" [href]="'mailto:'+profile.contact.mail">
+                        <i class="fas fa-envelope"></i>
+                        <span>{{profile.contact.mail}}</span>
+                    </a>
+                    <a class="contact-pill" [href]="'tel:'+profile.contact.phone">
+                        <i class="fas fa-phone"></i>
+                        <span>{{profile.contact.phone}}</span>
+                    </a>
+                    <a class="contact-pill" href="https://{{profile.contact.website}}" target="_blank">
+                        <i class="fas fa-globe"></i>
+                        <span>{{profile.contact.website}}</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+            <span class="scroll-text mono">Scroll</span>
+        </div>
+    </div>
+
+    <!-- Sticky Navigation -->
     <div class="page-nav-space-holder d-none d-md-block">
-        <div id="page-nav-wrapper" class="page-nav-wrapper text-center">
+        <div id="page-nav-wrapper" class="page-nav-wrapper">
             <div class="container">
-                <ul id="page-nav" class="nav page-nav list-inline">
+                <ul id="page-nav" class="nav page-nav">
                     <li class="nav-item"><a class="scrollto nav-link" href="#experiences-section">Experiences</a></li>
                     <li class="nav-item"><a class="scrollto nav-link" href="#education-section">Education</a></li>
                     <li class="nav-item"><a class="scrollto nav-link" href="#skills-section">Skills</a></li>
                     <li class="nav-item"><a class="scrollto nav-link" href="#testimonials-section">Testimonials</a></li>
                     <li class="nav-item"><a class="scrollto nav-link" href="#portfolio-section">Portfolio</a></li>
                     <li class="nav-item"><a class="scrollto nav-link" href="#contact-section">Contact</a></li>
-                </ul><!--//page-nav-->
+                </ul>
             </div>
-        </div><!--//page-nav-wrapper-->
+        </div>
     </div>
-    
-  </header><!--//header-->
+</header>
