@@ -328,15 +328,21 @@ a {
   padding: 0 0 0 40px;
   margin-left: 0;
   
-  // Timeline line - stops at last item's node
+  // Timeline line - accent at top fading to gray
   &::before {
     content: '';
     position: absolute;
     left: 0;
-    top: 13px; // Align with first node center
-    bottom: 13px; // Stop at last node center
+    top: 13px;
+    bottom: 13px;
     width: 2px;
-    background: var(--gradient-primary);
+    background: linear-gradient(
+      to bottom,
+      var(--accent-primary) 0%,
+      rgba(var(--accent-primary-rgb), 0.3) 15%,
+      rgba(128, 128, 128, 0.3) 30%,
+      rgba(128, 128, 128, 0.2) 100%
+    );
   }
   
   .item {
@@ -348,33 +354,71 @@ a {
       margin-bottom: 0;
     }
     
-    // Timeline node
+    // Timeline node - centered on line (line at left:0, 2px wide)
     &::before {
       content: '';
       position: absolute;
-      left: -49px;
+      left: -47px;
       top: 5px;
       width: 16px;
       height: 16px;
       background: var(--bg-primary);
-      border: 3px solid var(--accent-primary);
+      border: 3px solid rgba(128, 128, 128, 0.4);
       border-radius: 50%;
+      box-shadow: none;
+    }
+    
+    // Inner dot - centered on line
+    &::after {
+      content: '';
+      position: absolute;
+      left: -42px;
+      top: 10px;
+      width: 6px;
+      height: 6px;
+      background: rgba(128, 128, 128, 0.5);
+      border-radius: 50%;
+    }
+    
+  }
+  
+  // First item - active with pulse animation (0% on gradient)
+  > cv-project:first-child .item,
+  > .item:first-child {
+    &::before {
+      border-color: var(--accent-primary);
       box-shadow: 0 0 20px rgba(var(--accent-primary-rgb), 0.5);
       animation: nodePulse 2s ease-in-out infinite;
     }
     
-    // Inner glow dot
     &::after {
-      content: '';
-      position: absolute;
-      left: -44px;
-      top: 10px;
-      width: 6px;
-      height: 6px;
       background: var(--accent-primary);
-      border-radius: 50%;
     }
   }
+  
+  // Second item (~15% on gradient - faded primary)
+  > cv-project:nth-child(2) .item {
+    &::before {
+      border-color: rgba(var(--accent-primary-rgb), 0.5);
+    }
+    
+    &::after {
+      background: rgba(var(--accent-primary-rgb), 0.5);
+    }
+  }
+  
+  // Third item (~30% on gradient - transitioning to gray)
+  > cv-project:nth-child(3) .item {
+    &::before {
+      border-color: rgba(var(--accent-primary-rgb), 0.3);
+    }
+    
+    &::after {
+      background: rgba(var(--accent-primary-rgb), 0.3);
+    }
+  }
+  
+  // Fourth+ items use default gray styles
   
   .work-place {
     position: relative;
