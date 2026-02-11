@@ -5,145 +5,14 @@
 section.initiatives-section {
     .initiatives-carousel {
         max-width: 900px;
-        min-height: 500px;
         margin: 0 auto;
         position: relative;
     }
 
-    .carousel-inner {
-        overflow: visible;
-    }
-
-    .item {
-        padding: 30px;
-        margin-bottom: 40px;
-        background: var(--glass-bg);
-        border: 1px solid var(--glass-border);
-        border-radius: var(--radius-lg);
-        transition: var(--transition-normal);
-
-        &:hover {
-            border-color: rgba(var(--accent-primary-rgb), 0.3);
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3),
-                        0 0 30px rgba(var(--accent-primary-rgb), 0.1);
-        }
-    }
-
-    .initiative-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        margin-bottom: 20px;
-        flex-wrap: wrap;
-        gap: 15px;
-    }
-
-    .initiative-title {
-        font-size: 1.5rem;
-        font-weight: 600;
-        color: var(--text-primary);
-        margin: 0;
-        background: var(--gradient-text);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-    }
-
-    .initiative-meta {
-        display: flex;
-        gap: 15px;
-        flex-wrap: wrap;
-
-        .time, .location {
-            font-size: 13px;
-            color: var(--text-muted);
-            font-family: 'JetBrains Mono', monospace;
-            padding: 5px 12px;
-            background: rgba(var(--accent-primary-rgb), 0.1);
-            border-radius: var(--radius-full);
-
-            i {
-                margin-right: 6px;
-                color: var(--accent-primary);
-            }
-        }
-    }
-
-    .initiative-desc {
-        color: var(--text-secondary);
-        font-size: 15px;
-        line-height: 1.7;
-        margin-bottom: 20px;
-    }
-
-    .initiative-activities {
-        margin-bottom: 25px;
-
-        ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-
-            li {
-                position: relative;
-                padding-left: 25px;
-                margin-bottom: 10px;
-                color: var(--text-secondary);
-                font-size: 14px;
-                line-height: 1.6;
-
-                &::before {
-                    content: '';
-                    position: absolute;
-                    left: 0;
-                    top: 8px;
-                    width: 8px;
-                    height: 8px;
-                    background: var(--gradient-primary);
-                    border-radius: 50%;
-                }
-            }
-        }
-    }
-
-    .initiative-tech {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 8px;
-        margin-bottom: 20px;
-
-        .job-technology {
-            padding: 5px 12px;
-            font-size: 12px;
-        }
-    }
-
-    .screenshots {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 15px;
-        margin-top: 20px;
-
-        img.screenshot {
-            max-width: 300px;
-            max-height: 200px;
-            border-radius: var(--radius-sm);
-            border: 1px solid var(--glass-border);
-            transition: var(--transition-normal);
-
-            &:hover {
-                transform: scale(1.05);
-                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
-                border-color: var(--accent-primary);
-            }
-        }
-    }
-
     .carousel-indicators {
         position: relative;
-        bottom: 0;
-        margin: 30px 0 0 0;
+        bottom: auto;
+        margin: 0 0 30px 0;
         display: flex;
         justify-content: center;
         gap: 10px;
@@ -169,25 +38,186 @@ section.initiatives-section {
             }
         }
     }
+
+    .carousel-inner {
+        overflow: visible;
+    }
+
+    .carousel-item {
+        // Remove default Bootstrap carousel transitions that cause issues
+        &.active {
+            display: block;
+        }
+    }
+
+    // Initiative Card Styling
+    .initiative-card {
+        background: var(--glass-bg);
+        border: 1px solid var(--glass-border);
+        border-radius: var(--radius-lg);
+        padding: 35px;
+        transition: var(--transition-normal);
+
+        &:hover {
+            border-color: rgba(var(--accent-primary-rgb), 0.3);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3),
+                        0 0 30px rgba(var(--accent-primary-rgb), 0.1);
+        }
+    }
+
+    .initiative-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 20px;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .initiative-title {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin: 0;
+        background: var(--gradient-text);
+        background-size: 200% auto;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+    .initiative-meta {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+
+        .time, .location {
+            font-size: 13px;
+            color: var(--text-muted);
+            font-family: 'JetBrains Mono', monospace;
+            padding: 6px 14px;
+            background: rgba(var(--accent-primary-rgb), 0.1);
+            border-radius: var(--radius-full);
+            white-space: nowrap;
+
+            i {
+                margin-right: 8px;
+                color: var(--accent-primary);
+            }
+        }
+    }
+
+    .initiative-desc {
+        color: var(--text-secondary);
+        font-size: 15px;
+        line-height: 1.8;
+        margin-bottom: 25px;
+    }
+
+    .initiative-activities {
+        margin-bottom: 25px;
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            gap: 12px;
+
+            li {
+                position: relative;
+                padding-left: 28px;
+                color: var(--text-secondary);
+                font-size: 14px;
+                line-height: 1.6;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 7px;
+                    width: 10px;
+                    height: 10px;
+                    background: var(--gradient-primary);
+                    border-radius: 50%;
+                    box-shadow: 0 0 10px rgba(var(--accent-primary-rgb), 0.5);
+                }
+            }
+        }
+    }
+
+    .initiative-tech {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 25px;
+
+        .job-technology {
+            padding: 6px 14px;
+            font-size: 12px;
+            background: rgba(var(--accent-primary-rgb), 0.1);
+            border: 1px solid rgba(var(--accent-primary-rgb), 0.3);
+            border-radius: var(--radius-full);
+            color: var(--accent-primary);
+            transition: var(--transition-fast);
+
+            &:hover {
+                background: rgba(var(--accent-primary-rgb), 0.2);
+                box-shadow: 0 0 15px rgba(var(--accent-primary-rgb), 0.3);
+            }
+        }
+    }
+
+    .screenshots {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding-top: 10px;
+
+        img.screenshot {
+            max-width: 280px;
+            max-height: 400px;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--glass-border);
+            transition: var(--transition-normal);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+
+            &:hover {
+                transform: scale(1.03) translateY(-5px);
+                box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+                border-color: var(--accent-primary);
+            }
+        }
+    }
 }
 
 // Responsive
 @media (max-width: 768px) {
     section.initiatives-section {
-        .item {
-            padding: 20px;
+        .initiative-card {
+            padding: 25px 20px;
         }
 
         .initiative-header {
             flex-direction: column;
+            gap: 12px;
         }
 
         .initiative-title {
             font-size: 1.25rem;
         }
 
-        .screenshots img.screenshot {
-            max-width: 100%;
+        .initiative-meta {
+            width: 100%;
+        }
+
+        .screenshots {
+            gap: 15px;
+            
+            img.screenshot {
+                max-width: 100%;
+                max-height: none;
+            }
         }
     }
 }

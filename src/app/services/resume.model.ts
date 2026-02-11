@@ -9,6 +9,7 @@ interface Experience {
 
 export interface Initiative extends Experience {
     name : String;
+    location? : String;
     media : String[];
 }
 

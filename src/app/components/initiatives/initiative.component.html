@@ -1,15 +1,25 @@
-<div class="item">
-    <div class="job-desc">
-        <h3>{{initiative.name}}</h3>
-        <p>{{initiative.description}}</p>
+<div class="initiative-card">
+    <div class="initiative-header">
+        <h3 class="initiative-title">{{initiative.name}}</h3>
+        <div class="initiative-meta">
+            <span class="time"><i class="fas fa-calendar-alt"></i>{{initiative.from}} - {{initiative.to}}</span>
+            <span class="location" *ngIf="initiative.location"><i class="fas fa-map-marker-alt"></i>{{initiative.location}}</span>
+        </div>
+    </div>
+    
+    <p class="initiative-desc">{{initiative.description}}</p>
+    
+    <div class="initiative-activities" *ngIf="initiative.activities?.length">
         <ul>
             <li *ngFor="let activity of initiative.activities">{{activity}}</li>
         </ul>
-        <span class="job-technology" *ngFor="let technology of initiative.technologies">{{technology}}</span>
-        <br/>
-        <br/>
     </div>
-    <div class="screenshots">
+    
+    <div class="initiative-tech">
+        <span class="job-technology" *ngFor="let technology of initiative.technologies">{{technology}}</span>
+    </div>
+    
+    <div class="screenshots" *ngIf="initiative.media?.length">
         <img *ngFor="let media of initiative.media" class="screenshot" [attr.src]="'assets/content/images/initiatives/'+media"/>
     </div>
 </div>
